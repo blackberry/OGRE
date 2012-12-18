@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classOgre_1_1SkeletonInstance.html" title="A SkeletonInstance is a single instance of a Skeleton used by a world object." alt="" coords="153,237,311,267"/>
+<area shape="rect" id="node2" href="$classOgre_1_1Resource.html" title="Abstract class representing a loadable resource (e.g." alt="" coords="92,83,207,112"/>
+<area shape="rect" id="node4" href="$classOgre_1_1StringInterface.html" title="Class defining the common interface which classes can use to present a reflection&#45;style, self&#45;defining parameter set to callers." alt="" coords="5,5,147,35"/>
+<area shape="rect" id="node6" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="171,5,277,35"/>
+<area shape="rect" id="node8" href="$classOgre_1_1AnimationContainer.html" title="An animation container interface, which allows generic access to sibling animations." alt="" coords="231,83,401,112"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classOgre_1_1Mesh.html" title="Ogre::Mesh" alt="" coords="31,83,121,112"/>
+<area shape="rect" id="node7" href="$classOgre_1_1Skeleton.html" title="A collection of Bone objects used to animate a skinned mesh." alt="" coords="165,83,275,112"/>
+<area shape="rect" id="node5" href="$classOgre_1_1PatchMesh.html" title="Patch specialisation of Mesh." alt="" coords="5,160,128,189"/>
+<area shape="rect" id="node9" href="$classOgre_1_1SkeletonInstance.html" title="A SkeletonInstance is a single instance of a Skeleton used by a world object." alt="" coords="152,160,309,189"/>
+</map>

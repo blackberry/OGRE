@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classOgre_1_1D3D11Plugin.html" title="Plugin instance for D3D11 Manager." alt="" coords="5,160,139,189"/>
+<area shape="rect" id="node7" href="$classOgre_1_1D3D9Plugin.html" title="Plugin instance for D3D9 Manager." alt="" coords="163,160,291,189"/>
+<area shape="rect" id="node9" href="$classOgre_1_1GLES2Plugin.html" title="Plugin instance for GL ES 2 Manager." alt="" coords="315,160,451,189"/>
+<area shape="rect" id="node11" href="$classOgre_1_1GLESPlugin.html" title="Plugin instance for GL Manager." alt="" coords="475,160,603,189"/>
+<area shape="rect" id="node13" href="$classOgre_1_1GLPlugin.html" title="Plugin instance for GL Manager." alt="" coords="627,160,736,189"/>
+<area shape="rect" id="node2" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="340,5,425,35"/>
+</map>

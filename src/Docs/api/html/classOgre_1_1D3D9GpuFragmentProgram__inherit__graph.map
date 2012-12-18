@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOgre_1_1D3D9GpuProgram.html" title="Direct3D implementation of a few things common to low&#45;level vertex &amp; fragment programs." alt="" coords="69,160,235,189"/>
+<area shape="rect" id="node4" href="$classOgre_1_1GpuProgram.html" title="Defines a program which runs on the GPU such as a vertex or fragment program." alt="" coords="5,83,136,112"/>
+<area shape="rect" id="node6" href="$classOgre_1_1Resource.html" title="Abstract class representing a loadable resource (e.g." alt="" coords="13,5,128,35"/>
+<area shape="rect" id="node8" href="$classOgre_1_1D3D9Resource.html" title="Represents a Direct3D rendering resource." alt="" coords="160,83,307,112"/>
+</map>

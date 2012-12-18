@@ -1,0 +1,36 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classOgre_1_1Compositor.html" title="Class representing a Compositor object." alt="" coords="363,225,488,255"/>
+<area shape="rect" id="node9" href="$classOgre_1_1Font.html" title="Class representing a font in the system." alt="" coords="384,279,467,308"/>
+<area shape="rect" id="node11" href="$classOgre_1_1GpuProgram.html" title="Defines a program which runs on the GPU such as a vertex or fragment program." alt="" coords="360,332,491,361"/>
+<area shape="rect" id="node49" href="$classOgre_1_1Material.html" title="Class encapsulates rendering properties of an object." alt="" coords="373,399,477,428"/>
+<area shape="rect" id="node51" href="$classOgre_1_1Mesh.html" title="Ogre::Mesh" alt="" coords="380,479,471,508"/>
+<area shape="rect" id="node55" href="$classOgre_1_1Skeleton.html" title="A collection of Bone objects used to animate a skinned mesh." alt="" coords="371,536,480,565"/>
+<area shape="rect" id="node59" href="$classOgre_1_1Texture.html" title="Abstract class representing a Texture resource." alt="" coords="375,672,476,701"/>
+<area shape="rect" id="node2" href="$classOgre_1_1StringInterface.html" title="Class defining the common interface which classes can use to present a reflection&#45;style, self&#45;defining parameter set to callers." alt="" coords="7,372,148,401"/>
+<area shape="rect" id="node4" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="24,425,131,455"/>
+<area shape="rect" id="node13" href="$classOgre_1_1D3D11GpuProgram.html" title="Direct3D implementation of a few things common to low&#45;level vertex &amp; fragment programs." alt="" coords="548,59,719,88"/>
+<area shape="rect" id="node19" href="$classOgre_1_1D3D9GpuProgram.html" title="Direct3D implementation of a few things common to low&#45;level vertex &amp; fragment programs." alt="" coords="551,165,716,195"/>
+<area shape="rect" id="node25" href="$classOgre_1_1GLES2GpuProgram.html" title="Generalised low&#45;level GL program, can be applied to multiple types (eg ARB and NV)" alt="" coords="547,247,720,276"/>
+<area shape="rect" id="node29" href="$classOgre_1_1GLGpuProgram.html" title="Generalised low&#45;level GL program, can be applied to multiple types (eg ARB and NV)" alt="" coords="560,328,707,357"/>
+<area shape="rect" id="node37" href="$classOgre_1_1HighLevelGpuProgram.html" title="Abstract base class representing a high&#45;level program (a vertex or fragment program)." alt="" coords="539,432,728,461"/>
+<area shape="rect" id="node15" href="$classOgre_1_1D3D11GpuFragmentProgram.html" title="Direct3D implementation of low&#45;level fragment programs." alt="" coords="779,5,1005,35"/>
+<area shape="rect" id="node17" href="$classOgre_1_1D3D11GpuVertexProgram.html" title="Direct3D implementation of low&#45;level vertex programs." alt="" coords="787,59,997,88"/>
+<area shape="rect" id="node21" href="$classOgre_1_1D3D9GpuFragmentProgram.html" title="Direct3D implementation of low&#45;level fragment programs." alt="" coords="783,112,1001,141"/>
+<area shape="rect" id="node23" href="$classOgre_1_1D3D9GpuVertexProgram.html" title="Direct3D implementation of low&#45;level vertex programs." alt="" coords="791,165,993,195"/>
+<area shape="rect" id="node27" href="$classOgre_1_1GLSLESGpuProgram.html" title="GLSL ES low level compiled shader object &#45; this class is used to get at the linked program object and..." alt="" coords="801,219,983,248"/>
+<area shape="rect" id="node31" href="$classOgre_1_1GLArbGpuProgram.html" title="Specialisation of the GL low&#45;level program for ARB programs." alt="" coords="808,272,976,301"/>
+<area shape="rect" id="node33" href="$classOgre_1_1GLGpuNvparseProgram.html" title="Ogre::GLGpuNvparseProgram" alt="" coords="793,325,991,355"/>
+<area shape="rect" id="node35" href="$classOgre_1_1GLSLGpuProgram.html" title="GLSL low level compiled shader object &#45; this class is used to get at the linked program object and pr..." alt="" coords="811,379,973,408"/>
+<area shape="rect" id="node39" href="$classOgre_1_1D3D11HLSLProgram.html" title="Specialization of HighLevelGpuProgram to provide support for D3D11 High&#45;Level Shader Language (HLSL)..." alt="" coords="801,432,983,461"/>
+<area shape="rect" id="node41" href="$classOgre_1_1D3D9HLSLProgram.html" title="Specialisation of HighLevelGpuProgram to provide support for D3D9 High&#45;Level Shader Language (HLSL)..." alt="" coords="805,485,979,515"/>
+<area shape="rect" id="node43" href="$classOgre_1_1GLSLESProgram.html" title="Specialisation of HighLevelGpuProgram to provide support for OpenGL Shader Language (GLSL ES) for Ope..." alt="" coords="813,539,971,568"/>
+<area shape="rect" id="node45" href="$classOgre_1_1GLSLProgram.html" title="Specialisation of HighLevelGpuProgram to provide support for OpenGL Shader Language (GLSL)..." alt="" coords="823,592,961,621"/>
+<area shape="rect" id="node47" href="$classOgre_1_1UnifiedHighLevelGpuProgram.html" title="Specialisation of HighLevelGpuProgram which just delegates its implementation to one other high level..." alt="" coords="777,645,1007,675"/>
+<area shape="rect" id="node53" href="$classOgre_1_1PatchMesh.html" title="Patch specialisation of Mesh." alt="" coords="572,485,695,515"/>
+<area shape="rect" id="node57" href="$classOgre_1_1SkeletonInstance.html" title="A SkeletonInstance is a single instance of a Skeleton used by a world object." alt="" coords="555,539,712,568"/>
+<area shape="rect" id="node61" href="$classOgre_1_1D3D11Texture.html" title="Ogre::D3D11Texture" alt="" coords="563,592,704,621"/>
+<area shape="rect" id="node63" href="$classOgre_1_1D3D9Texture.html" title="Ogre::D3D9Texture" alt="" coords="565,645,701,675"/>
+<area shape="rect" id="node65" href="$classOgre_1_1GLES2Texture.html" title="Ogre::GLES2Texture" alt="" coords="561,699,705,728"/>
+<area shape="rect" id="node67" href="$classOgre_1_1GLESTexture.html" title="Ogre::GLESTexture" alt="" coords="565,752,701,781"/>
+<area shape="rect" id="node69" href="$classOgre_1_1GLTexture.html" title="Ogre::GLTexture" alt="" coords="575,805,692,835"/>
+</map>

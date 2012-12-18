@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classOgre_1_1SharedPtr.html" title="Ogre::SharedPtr\&lt; Texture \&gt;" alt="" coords="5,5,189,35"/>
+<area shape="rect" id="node3" href="$classOgre_1_1TexturePtr.html" title="Specialisation of SharedPtr to allow SharedPtr to be assigned to TexturePtr." alt="" coords="239,5,356,35"/>
+</map>

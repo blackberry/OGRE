@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOgre_1_1BaseInstanceBatchVTF.html" title="Instancing implementation using vertex texture through Vertex Texture Fetch (VTF) This implementation..." alt="" coords="47,160,244,189"/>
+<area shape="rect" id="node4" href="$classOgre_1_1InstanceBatch.html" title="InstanceBatch forms part of the new Instancing system This is an abstract class that must be derived ..." alt="" coords="75,83,216,112"/>
+<area shape="rect" id="node6" href="$classOgre_1_1Renderable.html" title="Abstract class defining the interface all renderable objects must implement." alt="" coords="5,5,128,35"/>
+<area shape="rect" id="node8" href="$classOgre_1_1MovableObject.html" title="Abstract class defining a movable object in a scene." alt="" coords="152,5,296,35"/>
+</map>

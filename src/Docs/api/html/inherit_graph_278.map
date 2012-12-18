@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classOgre_1_1SharedPtr.html" title="Ogre::SharedPtr\&lt; Mesh \&gt;" alt="" coords="7,5,177,35"/>
+<area shape="rect" id="node3" href="$classOgre_1_1MeshPtr.html" title="Specialisation of SharedPtr to allow SharedPtr to be assigned to MeshPtr." alt="" coords="227,5,333,35"/>
+</map>

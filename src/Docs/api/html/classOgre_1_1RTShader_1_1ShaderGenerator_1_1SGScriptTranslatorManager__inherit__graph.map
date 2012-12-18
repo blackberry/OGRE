@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOgre_1_1ScriptTranslatorManager.html" title="The ScriptTranslatorManager manages the lifetime and access to script translators." alt="" coords="101,83,301,112"/>
+<area shape="rect" id="node4" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="131,5,272,35"/>
+</map>

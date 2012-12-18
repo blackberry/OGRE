@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOgre_1_1MovableObject.html" title="Abstract class defining a movable object in a scene." alt="" coords="176,83,320,112"/>
+<area shape="rect" id="node4" href="$classOgre_1_1ShadowCaster.html" title="This class defines the interface that must be implemented by shadow casters." alt="" coords="5,5,149,35"/>
+<area shape="rect" id="node6" href="$classOgre_1_1AnimableObject.html" title="Defines an interface to classes which have one or more AnimableValue instances to expose..." alt="" coords="173,5,323,35"/>
+<area shape="rect" id="node8" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="347,5,445,35"/>
+</map>

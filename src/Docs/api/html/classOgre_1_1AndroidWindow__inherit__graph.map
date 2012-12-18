@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOgre_1_1RenderWindow.html" title="Manages the target rendering window." alt="" coords="7,160,153,189"/>
+<area shape="rect" id="node4" href="$classOgre_1_1RenderTarget.html" title="A &#39;canvas&#39; which can receive the results of a rendering operation." alt="" coords="12,83,148,112"/>
+<area shape="rect" id="node6" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="23,5,137,35"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classOgre_1_1IntersectionSceneQuery.html" title="Separate SceneQuery class to query for pairs of objects which are possibly intersecting one another..." alt="" coords="345,5,543,35"/>
+<area shape="rect" id="node9" href="$classOgre_1_1RaySceneQuery.html" title="Specialises the SceneQuery class for querying along a ray." alt="" coords="367,59,521,88"/>
+<area shape="rect" id="node13" href="$classOgre_1_1RegionSceneQuery.html" title="Abstract class defining a query which returns single results from a region." alt="" coords="359,139,529,168"/>
+<area shape="rect" id="node2" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="7,59,116,88"/>
+<area shape="rect" id="node7" href="$classOgre_1_1DefaultIntersectionSceneQuery.html" title="Default implementation of IntersectionSceneQuery." alt="" coords="612,5,852,35"/>
+<area shape="rect" id="node11" href="$classOgre_1_1DefaultRaySceneQuery.html" title="Default implementation of RaySceneQuery." alt="" coords="635,59,829,88"/>
+<area shape="rect" id="node15" href="$classOgre_1_1AxisAlignedBoxSceneQuery.html" title="Specialises the SceneQuery class for querying within an axis aligned box." alt="" coords="621,112,843,141"/>
+<area shape="rect" id="node19" href="$classOgre_1_1PlaneBoundedVolumeListSceneQuery.html" title="Specialises the SceneQuery class for querying within a plane&#45;bounded volume." alt="" coords="593,165,871,195"/>
+<area shape="rect" id="node23" href="$classOgre_1_1SphereSceneQuery.html" title="Specialises the SceneQuery class for querying within a sphere." alt="" coords="647,219,817,248"/>
+<area shape="rect" id="node17" href="$classOgre_1_1DefaultAxisAlignedBoxSceneQuery.html" title="Default implementation of AxisAlignedBoxSceneQuery." alt="" coords="949,112,1213,141"/>
+<area shape="rect" id="node21" href="$classOgre_1_1DefaultPlaneBoundedVolumeListSceneQuery.html" title="Default implementation of PlaneBoundedVolumeListSceneQuery." alt="" coords="921,165,1241,195"/>
+<area shape="rect" id="node25" href="$classOgre_1_1DefaultSphereSceneQuery.html" title="Default implementation of SphereSceneQuery." alt="" coords="975,219,1188,248"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node13" href="$classOgre_1_1D3D9GpuFragmentProgram.html" title="Direct3D implementation of low&#45;level fragment programs." alt="" coords="5,315,224,344"/>
+<area shape="rect" id="node15" href="$classOgre_1_1D3D9GpuVertexProgram.html" title="Direct3D implementation of low&#45;level vertex programs." alt="" coords="248,315,451,344"/>
+<area shape="rect" id="node2" href="$classOgre_1_1GpuProgram.html" title="Defines a program which runs on the GPU such as a vertex or fragment program." alt="" coords="85,160,216,189"/>
+<area shape="rect" id="node4" href="$classOgre_1_1Resource.html" title="Abstract class representing a loadable resource (e.g." alt="" coords="93,83,208,112"/>
+<area shape="rect" id="node6" href="$classOgre_1_1StringInterface.html" title="Class defining the common interface which classes can use to present a reflection&#45;style, self&#45;defining parameter set to callers." alt="" coords="7,5,148,35"/>
+<area shape="rect" id="node8" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="172,5,279,35"/>
+<area shape="rect" id="node10" href="$classOgre_1_1D3D9Resource.html" title="Represents a Direct3D rendering resource." alt="" coords="240,160,387,189"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node9" href="$classOgre_1_1DefaultIntersectionSceneQuery.html" title="Default implementation of IntersectionSceneQuery." alt="" coords="56,237,296,267"/>
+<area shape="rect" id="node2" href="$classOgre_1_1SceneQuery.html" title="A class for performing queries on a scene." alt="" coords="5,83,136,112"/>
+<area shape="rect" id="node4" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="16,5,125,35"/>
+<area shape="rect" id="node6" href="$classOgre_1_1IntersectionSceneQueryListener.html" title="Alternative listener class for dealing with IntersectionSceneQuery." alt="" coords="160,83,403,112"/>
+</map>

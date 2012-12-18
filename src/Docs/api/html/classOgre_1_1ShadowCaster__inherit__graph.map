@@ -1,0 +1,25 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classOgre_1_1MovableObject.html" title="Abstract class defining a movable object in a scene." alt="" coords="199,352,343,381"/>
+<area shape="rect" id="node5" href="$classOgre_1_1BillboardChain.html" title="Allows the rendering of a chain of connected billboards." alt="" coords="453,5,595,35"/>
+<area shape="rect" id="node9" href="$classOgre_1_1BillboardSet.html" title="A collection of billboards (faces which are always facing the given direction) with the same (default..." alt="" coords="460,59,588,88"/>
+<area shape="rect" id="node11" href="$classOgre_1_1Entity.html" title="Defines an instance of a discrete, movable object based on a Mesh." alt="" coords="479,112,569,141"/>
+<area shape="rect" id="node13" href="$classOgre_1_1Frustum.html" title="A frustum represents a pyramid, capped at the near and far end which is used to represent either a vi..." alt="" coords="471,165,577,195"/>
+<area shape="rect" id="node17" href="$classOgre_1_1InstanceBatch.html" title="InstanceBatch forms part of the new Instancing system This is an abstract class that must be derived ..." alt="" coords="453,219,595,248"/>
+<area shape="rect" id="node25" href="$classOgre_1_1InstancedEntity.html" title="Ogre::InstancedEntity" alt="" coords="449,272,599,301"/>
+<area shape="rect" id="node27" href="$classOgre_1_1InstancedGeometry_1_1BatchInstance.html" title="The details of a topological BatchInstance which is the highest level of partitioning for this class..." alt="" coords="392,325,656,355"/>
+<area shape="rect" id="node29" href="$classOgre_1_1Light.html" title="Representation of a dynamic light source in the scene." alt="" coords="481,379,567,408"/>
+<area shape="rect" id="node31" href="$classOgre_1_1ManualObject.html" title="Class providing a much simplified interface to generating manual objects with custom geometry..." alt="" coords="455,432,593,461"/>
+<area shape="rect" id="node33" href="$classOgre_1_1MovablePlane.html" title="Definition of a Plane that may be attached to a node, and the derived details of it retrieved simply..." alt="" coords="455,485,593,515"/>
+<area shape="rect" id="node35" href="$classOgre_1_1ParticleSystem.html" title="Class defining particle system based special effects." alt="" coords="451,539,597,568"/>
+<area shape="rect" id="node37" href="$classOgre_1_1SimpleRenderable.html" title="Simple implementation of MovableObject and Renderable for single&#45;part custom objects." alt="" coords="443,592,605,621"/>
+<area shape="rect" id="node45" href="$classOgre_1_1StaticGeometry_1_1Region.html" title="The details of a topological region which is the highest level of partitioning for this class..." alt="" coords="425,645,623,675"/>
+<area shape="rect" id="node47" href="$classOgre_1_1TerrainQuadTreeNode_1_1Movable.html" title="MovableObject implementation to provide the hook to the scene." alt="" coords="403,699,645,728"/>
+<area shape="rect" id="node7" href="$classOgre_1_1RibbonTrail.html" title="Subclass of BillboardChain which automatically leaves a trail behind one or more Node instances..." alt="" coords="783,5,905,35"/>
+<area shape="rect" id="node15" href="$classOgre_1_1Camera.html" title="A viewpoint from which the scene will be rendered." alt="" coords="792,139,896,168"/>
+<area shape="rect" id="node19" href="$classOgre_1_1BaseInstanceBatchVTF.html" title="Instancing implementation using vertex texture through Vertex Texture Fetch (VTF) This implementation..." alt="" coords="745,192,943,221"/>
+<area shape="rect" id="node21" href="$classOgre_1_1InstanceBatchHW.html" title="This is technique requires true instancing hardware support." alt="" coords="761,245,927,275"/>
+<area shape="rect" id="node23" href="$classOgre_1_1InstanceBatchShader.html" title="This is the same technique the old &quot;InstancedGeometry&quot; implementation used (with improvements)." alt="" coords="753,299,935,328"/>
+<area shape="rect" id="node39" href="$classOgre_1_1InstancedGeometry_1_1GeometryBucket.html" title="A GeometryBucket is a the lowest level bucket where geometry with the same vertex &amp; index format is s..." alt="" coords="705,539,983,568"/>
+<area shape="rect" id="node41" href="$classOgre_1_1Rectangle2D.html" title="Allows the rendering of a simple 2D rectangle This class renders a simple 2D rectangle; this rectangl..." alt="" coords="777,592,911,621"/>
+<area shape="rect" id="node43" href="$classOgre_1_1WireBoundingBox.html" title="Allows the rendering of a wireframe bounding box." alt="" coords="763,645,925,675"/>
+</map>

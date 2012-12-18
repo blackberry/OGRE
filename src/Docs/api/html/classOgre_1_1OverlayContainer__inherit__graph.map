@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node11" href="$classOgre_1_1PanelOverlayElement.html" title="OverlayElement representing a flat, single&#45;material (or transparent) panel which can contain other el..." alt="" coords="140,237,324,267"/>
+<area shape="rect" id="node2" href="$classOgre_1_1OverlayElement.html" title="Abstract definition of a 2D element to be displayed in an Overlay." alt="" coords="157,83,307,112"/>
+<area shape="rect" id="node4" href="$classOgre_1_1StringInterface.html" title="Class defining the common interface which classes can use to present a reflection&#45;style, self&#45;defining parameter set to callers." alt="" coords="5,5,147,35"/>
+<area shape="rect" id="node6" href="$classOgre_1_1Renderable.html" title="Abstract class defining the interface all renderable objects must implement." alt="" coords="171,5,293,35"/>
+<area shape="rect" id="node8" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="317,5,413,35"/>
+<area shape="rect" id="node13" href="$classOgre_1_1BorderPanelOverlayElement.html" title="A specialisation of the PanelOverlayElement to provide a panel with a border." alt="" coords="121,315,343,344"/>
+</map>

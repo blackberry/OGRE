@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classOgre_1_1IntersectionSceneQuery.html" title="Separate SceneQuery class to query for pairs of objects which are possibly intersecting one another..." alt="" coords="28,83,225,112"/>
+<area shape="rect" id="node5" href="$classOgre_1_1DefaultIntersectionSceneQuery.html" title="Default implementation of IntersectionSceneQuery." alt="" coords="7,160,247,189"/>
+</map>

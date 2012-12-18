@@ -1,0 +1,36 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classOgre_1_1D3D11HardwareBuffer.html" title="Base implementation of a D3D11 buffer, dealing with all the common aspects." alt="" coords="340,219,529,248"/>
+<area shape="rect" id="node7" href="$classOgre_1_1HardwareIndexBuffer.html" title="Specialisation of HardwareBuffer for vertex index buffers, still abstract." alt="" coords="344,272,525,301"/>
+<area shape="rect" id="node27" href="$classOgre_1_1HardwarePixelBuffer.html" title="Specialisation of HardwareBuffer for a pixel buffer." alt="" coords="345,565,524,595"/>
+<area shape="rect" id="node51" href="$classOgre_1_1HardwareVertexBuffer.html" title="Specialisation of HardwareBuffer for a vertex buffer." alt="" coords="341,965,528,995"/>
+<area shape="rect" id="node2" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="7,405,92,435"/>
+<area shape="rect" id="node9" href="$classOgre_1_1D3D11HardwareIndexBuffer.html" title="Ogre::D3D11HardwareIndexBuffer" alt="" coords="604,5,825,35"/>
+<area shape="rect" id="node11" href="$classOgre_1_1D3D9HardwareIndexBuffer.html" title="Ogre::D3D9HardwareIndexBuffer" alt="" coords="608,59,821,88"/>
+<area shape="rect" id="node13" href="$classOgre_1_1DefaultHardwareIndexBuffer.html" title="Specialisation of HardwareIndexBuffer for emulation." alt="" coords="604,112,825,141"/>
+<area shape="rect" id="node15" href="$classOgre_1_1GLDefaultHardwareIndexBuffer.html" title="Specialisation of HardwareIndexBuffer for emulation." alt="" coords="595,165,835,195"/>
+<area shape="rect" id="node17" href="$classOgre_1_1GLES2DefaultHardwareIndexBuffer.html" title="Specialisation of HardwareIndexBuffer for emulation." alt="" coords="583,219,847,248"/>
+<area shape="rect" id="node19" href="$classOgre_1_1GLES2HardwareIndexBuffer.html" title="Ogre::GLES2HardwareIndexBuffer" alt="" coords="604,272,825,301"/>
+<area shape="rect" id="node21" href="$classOgre_1_1GLESDefaultHardwareIndexBuffer.html" title="Specialisation of HardwareIndexBuffer for emulation." alt="" coords="585,325,844,355"/>
+<area shape="rect" id="node23" href="$classOgre_1_1GLESHardwareIndexBuffer.html" title="Ogre::GLESHardwareIndexBuffer" alt="" coords="607,379,823,408"/>
+<area shape="rect" id="node25" href="$classOgre_1_1GLHardwareIndexBuffer.html" title="Ogre::GLHardwareIndexBuffer" alt="" coords="616,432,813,461"/>
+<area shape="rect" id="node29" href="$classOgre_1_1D3D11HardwarePixelBuffer.html" title="Ogre::D3D11HardwarePixelBuffer" alt="" coords="605,485,824,515"/>
+<area shape="rect" id="node31" href="$classOgre_1_1D3D9HardwarePixelBuffer.html" title="Ogre::D3D9HardwarePixelBuffer" alt="" coords="609,539,820,568"/>
+<area shape="rect" id="node33" href="$classOgre_1_1GLES2HardwarePixelBuffer.html" title="Ogre::GLES2HardwarePixelBuffer" alt="" coords="605,592,824,621"/>
+<area shape="rect" id="node39" href="$classOgre_1_1GLESHardwarePixelBuffer.html" title="Ogre::GLESHardwarePixelBuffer" alt="" coords="608,645,821,675"/>
+<area shape="rect" id="node45" href="$classOgre_1_1GLHardwarePixelBuffer.html" title="Ogre::GLHardwarePixelBuffer" alt="" coords="617,725,812,755"/>
+<area shape="rect" id="node35" href="$classOgre_1_1GLES2RenderBuffer.html" title="Renderbuffer surface." alt="" coords="900,525,1076,555"/>
+<area shape="rect" id="node37" href="$classOgre_1_1GLES2TextureBuffer.html" title="Texture surface." alt="" coords="899,579,1077,608"/>
+<area shape="rect" id="node41" href="$classOgre_1_1GLESRenderBuffer.html" title="Renderbuffer surface." alt="" coords="903,632,1073,661"/>
+<area shape="rect" id="node43" href="$classOgre_1_1GLESTextureBuffer.html" title="Texture surface." alt="" coords="903,685,1073,715"/>
+<area shape="rect" id="node47" href="$classOgre_1_1GLRenderBuffer.html" title="Renderbuffer surface." alt="" coords="912,739,1064,768"/>
+<area shape="rect" id="node49" href="$classOgre_1_1GLTextureBuffer.html" title="Texture surface." alt="" coords="911,792,1065,821"/>
+<area shape="rect" id="node53" href="$classOgre_1_1D3D11HardwareVertexBuffer.html" title="Specialisation of HardwareVertexBuffer for D3D11." alt="" coords="601,779,828,808"/>
+<area shape="rect" id="node55" href="$classOgre_1_1D3D9HardwareVertexBuffer.html" title="Specialisation of HardwareVertexBuffer for D3D9." alt="" coords="604,832,825,861"/>
+<area shape="rect" id="node57" href="$classOgre_1_1DefaultHardwareVertexBuffer.html" title="Specialisation of HardwareVertexBuffer for emulation." alt="" coords="600,885,829,915"/>
+<area shape="rect" id="node59" href="$classOgre_1_1GLDefaultHardwareVertexBuffer.html" title="Specialisation of HardwareVertexBuffer for emulation." alt="" coords="592,939,837,968"/>
+<area shape="rect" id="node61" href="$classOgre_1_1GLES2DefaultHardwareVertexBuffer.html" title="Specialisation of HardwareVertexBuffer for emulation." alt="" coords="580,992,849,1021"/>
+<area shape="rect" id="node63" href="$classOgre_1_1GLES2HardwareVertexBuffer.html" title="Specialisation of HardwareVertexBuffer for OpenGL ES." alt="" coords="600,1045,829,1075"/>
+<area shape="rect" id="node65" href="$classOgre_1_1GLESDefaultHardwareVertexBuffer.html" title="Specialisation of HardwareVertexBuffer for emulation." alt="" coords="583,1099,847,1128"/>
+<area shape="rect" id="node67" href="$classOgre_1_1GLESHardwareVertexBuffer.html" title="Specialisation of HardwareVertexBuffer for OpenGL ES." alt="" coords="604,1152,825,1181"/>
+<area shape="rect" id="node69" href="$classOgre_1_1GLHardwareVertexBuffer.html" title="Specialisation of HardwareVertexBuffer for OpenGL." alt="" coords="613,1205,816,1235"/>
+</map>

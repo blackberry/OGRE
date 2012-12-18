@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classOgre_1_1NumericKeyFrame.html" title="Specialised KeyFrame which stores any numeric value." alt="" coords="344,5,509,35"/>
+<area shape="rect" id="node7" href="$classOgre_1_1TransformKeyFrame.html" title="Specialised KeyFrame which stores a full transform." alt="" coords="339,59,515,88"/>
+<area shape="rect" id="node9" href="$classOgre_1_1VertexMorphKeyFrame.html" title="Specialised KeyFrame which stores absolute vertex positions for a complete buffer, designed to be interpolated with other keys in the same track." alt="" coords="331,112,523,141"/>
+<area shape="rect" id="node11" href="$classOgre_1_1VertexPoseKeyFrame.html" title="Specialised KeyFrame which references a Mesh::Pose at a certain influence level, which stores offsets..." alt="" coords="333,165,520,195"/>
+<area shape="rect" id="node2" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="5,85,115,115"/>
+</map>

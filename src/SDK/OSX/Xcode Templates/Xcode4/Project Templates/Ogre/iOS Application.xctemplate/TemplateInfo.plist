@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>org.ogre3d.iosApplication</string>
+	<key>Ancestors</key>
+	<array>
+		<string>org.ogre3d.iOSBase</string>
+		<string>org.ogre3d.objectiveCApplication</string>
+	</array>
+	<key>Description</key>
+	<string>This template builds an Ogre based project for iOS using the Basic Ogre Framework.</string>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>main.mm</key>
+		<dict>
+			<key>Path</key>
+			<string>main.mm</string>
+		</dict>
+		<key>AppDelegate.h</key>
+		<dict>
+			<key>Path</key>
+			<string>AppDelegate.h</string>
+			<key>Group</key>
+			<string>Basic Ogre Framework</string>
+		</dict>
+		<key>OgreDemoApp.cpp</key>
+		<dict>
+			<key>Path</key>
+			<string>OgreDemoApp.cpp</string>
+			<key>Group</key>
+			<string>Basic Ogre Framework</string>
+		</dict>
+		<key>OgreDemoApp.h</key>
+		<dict>
+			<key>Path</key>
+			<string>OgreDemoApp.h</string>
+			<key>Group</key>
+			<string>Basic Ogre Framework</string>
+		</dict>
+		<key>OgreFramework.cpp</key>
+		<dict>
+			<key>Path</key>
+			<string>OgreFramework.cpp</string>
+			<key>Group</key>
+			<string>Basic Ogre Framework</string>
+		</dict>
+		<key>OgreFramework.h</key>
+		<dict>
+			<key>Path</key>
+			<string>OgreFramework.h</string>
+			<key>Group</key>
+			<string>Basic Ogre Framework</string>
+		</dict>
+		<key>OgreStaticPluginLoader.h</key>
+		<dict>
+			<key>Path</key>
+			<string>OgreStaticPluginLoader.h</string>
+			<key>Group</key>
+			<string>Basic Ogre Framework</string>
+		</dict>
+		<key>ogre.cfg</key>
+		<dict>
+			<key>Path</key>
+			<string>ogre.cfg</string>
+			<key>Group</key>
+			<string>Resources</string>
+		</dict>
+		<key>plugins.cfg</key>
+		<dict>
+			<key>Path</key>
+			<string>plugins.cfg</string>
+			<key>Group</key>
+			<string>Resources</string>
+		</dict>
+		<key>resources.cfg</key>
+		<dict>
+			<key>Path</key>
+			<string>resources.cfg</string>
+			<key>Group</key>
+			<string>Resources</string>
+		</dict>
+		<key>media</key>
+		<dict>
+			<key>Path</key>
+			<string>media</string>
+			<key>PathType</key>
+			<string>Group</string>
+            <key>TargetIndices</key>
+            <array/>
+		</dict>
+		<key>___PACKAGENAME___-Info.plist:UIStatusBarHidden</key>
+		<string>&lt;key&gt;UIStatusBarHidden&lt;/key&gt;
+&lt;true/&gt;</string>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>main.mm</string>
+		<string>AppDelegate.h</string>
+		<string>OgreDemoApp.cpp</string>
+		<string>OgreDemoApp.h</string>
+		<string>OgreFramework.cpp</string>
+		<string>OgreFramework.h</string>
+		<string>OgreStaticPluginLoader.h</string>
+		<string>ogre.cfg</string>
+		<string>plugins.cfg</string>
+		<string>resources.cfg</string>
+		<string>media</string>
+		<string>___PACKAGENAME___-Info.plist:iPhone</string>
+		<string>___PACKAGENAME___-Info.plist:UIStatusBarHidden</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The location of your iOS Ogre3D SDK installation.</string>
+			<key>Identifier</key>
+			<string>ogrePathiOS</string>
+			<key>Name</key>
+			<string>Ogre iOS SDK Path</string>
+			<key>NotPersisted</key>
+			<false/>
+			<key>Placeholder</key>
+			<string>None</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Use the OpenGL ES 2.0 RenderSystem</string>
+			<key>Identifier</key>
+			<string>ogreUseGLES2</string>
+			<key>Name</key>
+			<string>Use OpenGL ES 2.0</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>false</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<array>
+					<dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>HEADER_SEARCH_PATHS</key>
+									<string>"___VARIABLE_ogrePathiOS___/include/OGRE" "___VARIABLE_ogrePathiOS___/include/OGRE/RenderSystems/GLES" "___VARIABLE_ogrePathiOS___/include/OGRE/iOS" "___VARIABLE_ogrePathiOS___/include" "___VARIABLE_ogrePathiOS___/include/OIS" "___VARIABLE_ogrePathiOS___/iOSDependencies/include"</string>
+									<key>OTHER_LDFLAGS</key>
+									<string>-lOIS -lOgreMainStatic -lRenderSystem_GLESStatic -lboost_thread -lFreeType -lFreeImage -lzzip -lz</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+				</array>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Targets</key>
+						<array>
+							<dict>
+								<key>SharedSettings</key>
+								<dict>
+									<key>HEADER_SEARCH_PATHS</key>
+									<string>"___VARIABLE_ogrePathiOS___/include/OGRE" "___VARIABLE_ogrePathiOS___/include/OGRE/RenderSystems/GLES2" "___VARIABLE_ogrePathiOS___/include/OGRE/RTShaderSystem" "___VARIABLE_ogrePathiOS___/include/OGRE/iOS" "___VARIABLE_ogrePathiOS___/include" "___VARIABLE_ogrePathiOS___/include/OIS" "___VARIABLE_ogrePathiOS___/iOSDependencies/include"</string>
+									<key>OTHER_CFLAGS</key>
+									<string>-DOGRE_USE_GLES2=1</string>
+									<key>OTHER_LDFLAGS</key>
+									<string>-lOIS -lOgreMainStatic -lRenderSystem_GLES2Static -lOgreRTShaderSystemStatic -lmesaglsl2 -lboost_thread -lFreeType -lFreeImage -lzzip -lz</string>
+								</dict>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>SDK</key>
+		<string>iphoneos</string>
+		<key>SharedSettings</key>
+		<dict>
+			<key>LIBRARY_SEARCH_PATHS</key>
+			<string>"___VARIABLE_ogrePathiOS___/lib/Release" "___VARIABLE_ogrePathiOS___/iOSDependencies/lib/release" "___VARIABLE_ogrePathiOS___/iOSDependencies/lib"</string>
+			<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+			<string>iPhone Developer</string>
+			<key>GCC_THUMB_SUPPORT</key>
+			<string></string>
+			<key>GCC_INLINES_ARE_PRIVATE_EXTERN</key>
+			<string>No</string>
+			<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+			<string>No</string>
+		</dict>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>ProductType</key>
+			<string>com.apple.product-type.application</string>
+			<key>Frameworks</key>
+			<array>
+				<string>CoreGraphics</string>
+				<string>Foundation</string>
+				<string>OpenGLES</string>
+				<string>QuartzCore</string>
+				<string>UIKit</string>
+			</array>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>ShellScript</key>
+					<string># This shell script simply copies resources into their respective locations
+
+ditto &quot;$PROJECT_DIR/$PROJECT_NAME/media/&quot; &quot;$BUILT_PRODUCTS_DIR/___PACKAGENAME___.app/media/&quot;
+ditto $PROJECT_DIR/$PROJECT_NAME/*.cfg &quot;$BUILT_PRODUCTS_DIR/___PACKAGENAME___.app/&quot;
+</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

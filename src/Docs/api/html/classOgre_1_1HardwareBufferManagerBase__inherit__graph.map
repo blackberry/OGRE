@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classOgre_1_1D3D11HardwareBufferManagerBase.html" title="Implementation of HardwareBufferManager for D3D11." alt="" coords="441,5,711,35"/>
+<area shape="rect" id="node7" href="$classOgre_1_1D3D9HardwareBufferManagerBase.html" title="Implementation of HardwareBufferManager for D3D9." alt="" coords="445,59,707,88"/>
+<area shape="rect" id="node9" href="$classOgre_1_1DefaultHardwareBufferManagerBase.html" title="Specialisation of HardwareBufferManagerBase to emulate hardware buffers." alt="" coords="441,112,711,141"/>
+<area shape="rect" id="node11" href="$classOgre_1_1GLDefaultHardwareBufferManagerBase.html" title="Specialisation of HardwareBufferManager to emulate hardware buffers." alt="" coords="432,165,720,195"/>
+<area shape="rect" id="node13" href="$classOgre_1_1GLES2DefaultHardwareBufferManagerBase.html" title="Specialisation of HardwareBufferManager to emulate hardware buffers." alt="" coords="420,219,732,248"/>
+<area shape="rect" id="node15" href="$classOgre_1_1GLES2HardwareBufferManagerBase.html" title="Implementation of HardwareBufferManager for OpenGL ES." alt="" coords="441,272,711,301"/>
+<area shape="rect" id="node17" href="$classOgre_1_1GLESDefaultHardwareBufferManagerBase.html" title="Specialisation of HardwareBufferManager to emulate hardware buffers." alt="" coords="423,325,729,355"/>
+<area shape="rect" id="node19" href="$classOgre_1_1GLESHardwareBufferManagerBase.html" title="Implementation of HardwareBufferManager for OpenGL ES." alt="" coords="444,379,708,408"/>
+<area shape="rect" id="node21" href="$classOgre_1_1GLHardwareBufferManagerBase.html" title="Implementation of HardwareBufferManager for OpenGL." alt="" coords="453,432,699,461"/>
+<area shape="rect" id="node23" href="$classOgre_1_1HardwareBufferManager.html" title="Singleton wrapper for hardware buffer manager." alt="" coords="477,485,675,515"/>
+<area shape="rect" id="node2" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="7,245,92,275"/>
+<area shape="rect" id="node25" href="$classOgre_1_1D3D11HardwareBufferManager.html" title="D3D11HardwareBufferManagerBase as a Singleton." alt="" coords="803,272,1043,301"/>
+<area shape="rect" id="node27" href="$classOgre_1_1D3D9HardwareBufferManager.html" title="D3D9HardwareBufferManagerBase as a Singleton." alt="" coords="807,325,1039,355"/>
+<area shape="rect" id="node29" href="$classOgre_1_1DefaultHardwareBufferManager.html" title="DefaultHardwareBufferManager as a Singleton." alt="" coords="803,379,1043,408"/>
+<area shape="rect" id="node31" href="$classOgre_1_1GLDefaultHardwareBufferManager.html" title="GLDefaultHardwareBufferManagerBase as a Singleton." alt="" coords="793,432,1052,461"/>
+<area shape="rect" id="node33" href="$classOgre_1_1GLES2DefaultHardwareBufferManager.html" title="GLES2DefaultHardwareBufferManagerBase as a Singleton." alt="" coords="781,485,1064,515"/>
+<area shape="rect" id="node35" href="$classOgre_1_1GLES2HardwareBufferManager.html" title="GLES2HardwareBufferManagerBase as a Singleton." alt="" coords="803,539,1043,568"/>
+<area shape="rect" id="node37" href="$classOgre_1_1GLESDefaultHardwareBufferManager.html" title="GLESDefaultHardwareBufferManagerBase as a Singleton." alt="" coords="785,592,1060,621"/>
+<area shape="rect" id="node39" href="$classOgre_1_1GLESHardwareBufferManager.html" title="GLESHardwareBufferManagerBase as a Singleton." alt="" coords="805,645,1040,675"/>
+<area shape="rect" id="node41" href="$classOgre_1_1GLHardwareBufferManager.html" title="GLHardwareBufferManagerBase as a Singleton." alt="" coords="815,699,1031,728"/>
+</map>

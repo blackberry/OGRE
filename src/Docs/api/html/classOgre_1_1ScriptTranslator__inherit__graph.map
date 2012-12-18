@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classOgre_1_1CompositionPassTranslator.html" title="Ogre::CompositionPassTranslator" alt="" coords="416,5,635,35"/>
+<area shape="rect" id="node7" href="$classOgre_1_1CompositionTargetPassTranslator.html" title="Ogre::CompositionTargetPassTranslator" alt="" coords="397,59,653,88"/>
+<area shape="rect" id="node9" href="$classOgre_1_1CompositionTechniqueTranslator.html" title="Ogre::CompositionTechniqueTranslator" alt="" coords="401,112,649,141"/>
+<area shape="rect" id="node11" href="$classOgre_1_1CompositorTranslator.html" title="Ogre::CompositorTranslator" alt="" coords="435,165,616,195"/>
+<area shape="rect" id="node13" href="$classOgre_1_1GpuProgramTranslator.html" title="Ogre::GpuProgramTranslator" alt="" coords="431,219,620,248"/>
+<area shape="rect" id="node15" href="$classOgre_1_1MaterialTranslator.html" title="Ogre::MaterialTranslator" alt="" coords="444,272,607,301"/>
+<area shape="rect" id="node17" href="$classOgre_1_1ParticleAffectorTranslator.html" title="Ogre::ParticleAffectorTranslator" alt="" coords="423,325,628,355"/>
+<area shape="rect" id="node19" href="$classOgre_1_1ParticleEmitterTranslator.html" title="Ogre::ParticleEmitterTranslator" alt="" coords="424,379,627,408"/>
+<area shape="rect" id="node21" href="$classOgre_1_1ParticleSystemTranslator.html" title="Ogre::ParticleSystemTranslator" alt="" coords="423,432,628,461"/>
+<area shape="rect" id="node23" href="$classOgre_1_1PassTranslator.html" title="Ogre::PassTranslator" alt="" coords="452,485,599,515"/>
+<area shape="rect" id="node25" href="$classOgre_1_1RTShader_1_1SGScriptTranslator.html" title="This class responsible for translating core features of the RT Shader System for Ogre material script..." alt="" coords="408,539,643,568"/>
+<area shape="rect" id="node27" href="$classOgre_1_1SharedParamsTranslator.html" title="Ogre::SharedParamsTranslator" alt="" coords="424,592,627,621"/>
+<area shape="rect" id="node29" href="$classOgre_1_1TechniqueTranslator.html" title="Ogre::TechniqueTranslator" alt="" coords="437,645,613,675"/>
+<area shape="rect" id="node31" href="$classOgre_1_1TextureSourceTranslator.html" title="Ogre::TextureSourceTranslator" alt="" coords="425,699,625,728"/>
+<area shape="rect" id="node33" href="$classOgre_1_1TextureUnitTranslator.html" title="Ogre::TextureUnitTranslator" alt="" coords="433,752,617,781"/>
+<area shape="rect" id="node2" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="7,379,148,408"/>
+</map>

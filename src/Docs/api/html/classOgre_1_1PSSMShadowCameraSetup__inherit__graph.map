@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$classOgre_1_1LiSPSMShadowCameraSetup.html" title="Implements the Light Space Perspective Shadow Mapping Algorithm." alt="" coords="7,160,239,189"/>
+<area shape="rect" id="node4" href="$classOgre_1_1FocusedShadowCameraSetup.html" title="Implements the uniform shadow mapping algorithm in focused mode." alt="" coords="5,83,240,112"/>
+<area shape="rect" id="node6" href="$classOgre_1_1ShadowCameraSetup.html" title="This class allows you to plug in new ways to define the camera setup when rendering and projecting sh..." alt="" coords="31,5,215,35"/>
+</map>

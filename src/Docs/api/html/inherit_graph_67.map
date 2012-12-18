@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classOgre_1_1Exception.html" title="When thrown, provides information about an error that has occurred inside the engine." alt="" coords="7,219,121,248"/>
+<area shape="rect" id="node3" href="$classOgre_1_1FileNotFoundException.html" title="Ogre::FileNotFoundException" alt="" coords="184,5,379,35"/>
+<area shape="rect" id="node5" href="$classOgre_1_1InternalErrorException.html" title="Ogre::InternalErrorException" alt="" coords="188,59,375,88"/>
+<area shape="rect" id="node7" href="$classOgre_1_1InvalidParametersException.html" title="Ogre::InvalidParametersException" alt="" coords="171,112,392,141"/>
+<area shape="rect" id="node9" href="$classOgre_1_1InvalidStateException.html" title="Ogre::InvalidStateException" alt="" coords="189,165,373,195"/>
+<area shape="rect" id="node11" href="$classOgre_1_1IOException.html" title="Ogre::IOException" alt="" coords="216,219,347,248"/>
+<area shape="rect" id="node13" href="$classOgre_1_1ItemIdentityException.html" title="Ogre::ItemIdentityException" alt="" coords="189,272,373,301"/>
+<area shape="rect" id="node15" href="$classOgre_1_1RenderingAPIException.html" title="Ogre::RenderingAPIException" alt="" coords="183,325,380,355"/>
+<area shape="rect" id="node17" href="$classOgre_1_1RuntimeAssertionException.html" title="Ogre::RuntimeAssertionException" alt="" coords="172,379,391,408"/>
+<area shape="rect" id="node19" href="$classOgre_1_1UnimplementedException.html" title="Ogre::UnimplementedException" alt="" coords="179,432,384,461"/>
+</map>

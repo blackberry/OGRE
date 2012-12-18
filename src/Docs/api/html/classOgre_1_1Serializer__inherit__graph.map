@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$classOgre_1_1GpuNamedConstantsSerializer.html" title="Simple class for loading / saving GpuNamedConstants." alt="" coords="321,5,559,35"/>
+<area shape="rect" id="node7" href="$classOgre_1_1MeshSerializer.html" title="Class for serialising mesh data to/from an OGRE .mesh file." alt="" coords="368,59,512,88"/>
+<area shape="rect" id="node9" href="$classOgre_1_1MeshSerializerImpl.html" title="Internal implementation of Mesh reading / writing for the latest version of the .mesh format..." alt="" coords="356,112,524,141"/>
+<area shape="rect" id="node15" href="$classOgre_1_1SkeletonSerializer.html" title="Class for serialising skeleton data to/from an OGRE .skeleton file." alt="" coords="359,165,521,195"/>
+<area shape="rect" id="node2" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="7,85,111,115"/>
+<area shape="rect" id="node11" href="$classOgre_1_1MeshSerializerImpl__v1__41.html" title="Class for providing backwards&#45;compatibility for loading version 1.41 of the .mesh format..." alt="" coords="608,112,819,141"/>
+<area shape="rect" id="node13" href="$classOgre_1_1MeshSerializerImpl__v1__4.html" title="Class for providing backwards&#45;compatibility for loading version 1.4 of the .mesh format." alt="" coords="868,112,1071,141"/>
+</map>

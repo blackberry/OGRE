@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node7" href="$classOgre_1_1DDSCodec.html" title="Codec specialized in loading DDS (Direct Draw Surface) images." alt="" coords="5,237,131,267"/>
+<area shape="rect" id="node9" href="$classOgre_1_1FreeImageCodec.html" title="Codec specialized in images loaded using FreeImage." alt="" coords="155,237,312,267"/>
+<area shape="rect" id="node11" href="$classOgre_1_1PVRTCCodec.html" title="Codec specialized in loading PVRTC (PowerVR) images." alt="" coords="336,237,477,267"/>
+<area shape="rect" id="node2" href="$classOgre_1_1Codec.html" title="Abstract class that defines a &#39;codec&#39;." alt="" coords="185,83,281,112"/>
+<area shape="rect" id="node4" href="$classOgre_1_1AllocatedObject.html" title="Superclass for all objects that wish to use custom memory allocators when their new / delete operator..." alt="" coords="189,5,277,35"/>
+</map>
