@@ -190,7 +190,7 @@ See the following PDF for information under Generating an App ID:
 http://developer.apple.com/library/ios/documentation/Xcode/Conceptual/iphone_development/index.html
 
 
-8. Building Ogre Windows/MacOSX/Linux for BlackBerry 10
+9. Building Ogre Windows/MacOSX/Linux for BlackBerry 10
 -------------------------------------------------------------
 
 Pre-requisites:
@@ -217,16 +217,16 @@ cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE="../CMake/toolchain/qnx.toolchain.cmake" -DTargetPlatform="Qnx" -DOGRE_DEPENDENCIES_DIR="../QNXDependencies" -DOGRE_BUILD_RENDERSYSTEM_GLES2=TRUE -DOGRE_STATIC=TRUE  -DOGRE_BUILD_COMPONENT_PAGING=TRUE -DOGRE_BUILD_COMPONENT_TERRAIN=TRUE -DOGRE_BUILD_COMPONENT_RTSHADERSYSTEM=TRUE -DOGRE_BUILD_PLUGIN_BSP=FALSE -DOGRE_BUILD_PLUGIN_PCZ=FALSE -DOGRE_BUILD_RENDERSYSTEM_GLES=FALSE -DOGRE_BUILD_TESTS=FALSE -DOGRE_BUILD_TOOLS=FALSE -DCMAKE_VERBOSE_MAKEFILE=TRUE -G "Eclipse CDT4 - Unix Makefiles"
 make
 
-
 Note: The port was done without enabling boost. There is already Boost Porting for BB10 in the github, if you want to enable multi-threading in Ogre3D, which Boost LIB is needed. You can refer Ogre3D doc for how to enable multithreading with Boost.
 
-How to package/deploy the sample app to a BlackBerry 10 device:
+5) Package and Deploy the sample app to a BlackBerry 10 device:
 
 cp ../CMake/toolchain/bar-descriptor.xml bar-descriptor.xml
 cp ../CMake/toolchain/resources.cfg bin/resources.cfg
 cp ../CMake/toolchain/icon.png icon.png
 
 Launch QDE and import the Ogre3D eclipse project under the "build" directory generated in Part 1.
+
 Edit the "Author Information" bar-descriptor.xml to use the your debug token information.
 
 Go back to command line console to generate a bar file and deploy it to the device:
