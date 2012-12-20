@@ -72,6 +72,11 @@ THE SOFTWARE.
 #       undef GL_OES_get_program_binary
 #       undef GL_OES_mapbuffer
 #	endif
+#   if (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#      undef GL_OES_get_program_binary
+#      undef GL_EXT_occlusion_query_boolean
+#      undef GL_EXT_debug_label
+#   endif
 #else
 #   include <GLES2/gl2.h>
 #   include <GLES2/gl2ext.h>

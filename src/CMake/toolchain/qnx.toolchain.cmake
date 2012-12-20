@@ -67,13 +67,13 @@ set( CMAKE_OBJDUMP      "$ENV{QNX_HOST}/usr/bin/ntoarmv7-objdump"   CACHE PATH "
 set( CMAKE_RANLIB       "$ENV{QNX_HOST}/usr/bin/ntoarm-ranlib"      CACHE PATH "ranlib" )
 
 # Installer
-if( APPLE )
- find_program( CMAKE_INSTALL_NAME_TOOL NAMES install_name_tool )
- if( NOT CMAKE_INSTALL_NAME_TOOL )
-  message( FATAL_ERROR "Could not find install_name_tool, please check your installation." )
- endif()
- mark_as_advanced( CMAKE_INSTALL_NAME_TOOL )
-endif()
+#if( APPLE )
+# find_program( CMAKE_INSTALL_NAME_TOOL NAMES install_name_tool )
+# if( NOT CMAKE_INSTALL_NAME_TOOL )
+#  message( FATAL_ERROR "Could not find install_name_tool, please check your #installation." )
+# endif()
+# mark_as_advanced( CMAKE_INSTALL_NAME_TOOL )
+# endif()
 
 # Setup output directories
 set( LIBRARY_OUTPUT_PATH_ROOT ${CMAKE_SOURCE_DIR}                                       CACHE PATH "root for library output, set this to change where android libs are installed to" )
