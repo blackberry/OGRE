@@ -50,21 +50,21 @@ else()
 endif()
 
 # Specify the cross compiler
-set( CMAKE_C_COMPILER   "$ENV{QNX_HOST}/usr/bin/qcc"                CACHE PATH "gcc" )
-set( CMAKE_CXX_COMPILER "$ENV{QNX_HOST}/usr/bin/qcc"                CACHE PATH "g++" )
-set( CMAKE_ASM_COMPILER "$ENV{QNX_HOST}/usr/bin/qcc"                CACHE PATH "Assembler" )
+set( CMAKE_C_COMPILER   "$ENV{QNX_HOST}/usr/bin/qcc${TOOL_OS_SUFFIX}"                CACHE PATH "gcc" )
+set( CMAKE_CXX_COMPILER "$ENV{QNX_HOST}/usr/bin/qcc${TOOL_OS_SUFFIX}"                CACHE PATH "g++" )
+set( CMAKE_ASM_COMPILER "$ENV{QNX_HOST}/usr/bin/qcc${TOOL_OS_SUFFIX}"                CACHE PATH "Assembler" )
 if( CMAKE_VERSION VERSION_LESS 2.8.5 )
  set( CMAKE_ASM_COMPILER_ARG1 "-c" )
 endif()
 
 # There may be a way to make cmake reduce these TODO
-set( CMAKE_STRIP        "$ENV{QNX_HOST}/usr/bin/ntoarm-strip"       CACHE PATH "strip" )
-set( CMAKE_AR           "$ENV{QNX_HOST}/usr/bin/ntoarm-ar"          CACHE PATH "archive" )
-set( CMAKE_LINKER       "$ENV{QNX_HOST}/usr/bin/ntoarmv7-ld"        CACHE PATH "linker" )
-set( CMAKE_NM           "$ENV{QNX_HOST}/usr/bin/ntoarmv7-nm"        CACHE PATH "nm" )
-set( CMAKE_OBJCOPY      "$ENV{QNX_HOST}/usr/bin/ntoarmv7-objcopy"   CACHE PATH "objcopy" )
-set( CMAKE_OBJDUMP      "$ENV{QNX_HOST}/usr/bin/ntoarmv7-objdump"   CACHE PATH "objdump" )
-set( CMAKE_RANLIB       "$ENV{QNX_HOST}/usr/bin/ntoarm-ranlib"      CACHE PATH "ranlib" )
+set( CMAKE_STRIP        "$ENV{QNX_HOST}/usr/bin/ntoarm-strip${TOOL_OS_SUFFIX}"       CACHE PATH "strip" )
+set( CMAKE_AR           "$ENV{QNX_HOST}/usr/bin/ntoarm-ar${TOOL_OS_SUFFIX}"          CACHE PATH "archive" )
+set( CMAKE_LINKER       "$ENV{QNX_HOST}/usr/bin/ntoarmv7-ld${TOOL_OS_SUFFIX}"        CACHE PATH "linker" )
+set( CMAKE_NM           "$ENV{QNX_HOST}/usr/bin/ntoarmv7-nm${TOOL_OS_SUFFIX}"        CACHE PATH "nm" )
+set( CMAKE_OBJCOPY      "$ENV{QNX_HOST}/usr/bin/ntoarmv7-objcopy${TOOL_OS_SUFFIX}"   CACHE PATH "objcopy" )
+set( CMAKE_OBJDUMP      "$ENV{QNX_HOST}/usr/bin/ntoarmv7-objdump${TOOL_OS_SUFFIX}"   CACHE PATH "objdump" )
+set( CMAKE_RANLIB       "$ENV{QNX_HOST}/usr/bin/ntoarm-ranlib${TOOL_OS_SUFFIX}"      CACHE PATH "ranlib" )
 
 # Installer
 #if( APPLE )
