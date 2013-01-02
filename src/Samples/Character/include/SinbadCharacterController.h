@@ -121,7 +121,7 @@ public:
 		}
 	}
 
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)||(OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)||(OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 	void injectMouseMove(const OIS::MultiTouchEvent& evt)
 	{
 		// update camera goal based on mouse movement

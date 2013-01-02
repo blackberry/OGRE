@@ -692,7 +692,7 @@ MAX_RELEASE_CHECK_RATE   default: 4095 unless not HAVE_MMAP
 
 #ifdef HAVE_USR_INCLUDE_MALLOC_H
 #include "/usr/include/malloc.h"
-#elif defined(__ANDROID__) || defined(ANDROID) || defined(__QNX__) || defined(QNX)
+#elif defined(__ANDROID__) || defined(ANDROID) || defined(__QNX__) || defined(BLACKBERRY)
 #include <malloc.h>
 #define STRUCT_MALLINFO_DECLARED 1
 #else /* HAVE_USR_INCLUDE_MALLOC_H */

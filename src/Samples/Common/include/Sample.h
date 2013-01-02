@@ -88,7 +88,7 @@ namespace OgreBites
 			mResourcesLoaded = false;
 			mContentSetup = false;
 
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)|| (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)|| (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 			mMouse = 0;
 			mAccelerometer = 0;
 #else
@@ -145,7 +145,7 @@ namespace OgreBites
 		/*-----------------------------------------------------------------------------
 		| Sets up a sample. Used by the SampleContext class. Do not call directly.
 		-----------------------------------------------------------------------------*/
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual void _setup(Ogre::RenderWindow* window, OIS::MultiTouch* mouse, FileSystemLayer* fsLayer)
 #else
 		virtual void _setup(Ogre::RenderWindow* window, OIS::Keyboard* keyboard, OIS::Mouse* mouse, FileSystemLayer* fsLayer)
@@ -154,7 +154,7 @@ namespace OgreBites
 			// assign mRoot here in case Root was initialised after the Sample's constructor ran.
 			mRoot = Ogre::Root::getSingletonPtr();
 			mWindow = window;
-#if (OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS) && (OGRE_PLATFORM != OGRE_PLATFORM_ANDROID) && (OGRE_PLATFORM != OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS) && (OGRE_PLATFORM != OGRE_PLATFORM_ANDROID) && (OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY)
 			mKeyboard = keyboard;
 #endif
 			mMouse = mouse;
@@ -233,7 +233,7 @@ namespace OgreBites
 		virtual void windowFocusChange(Ogre::RenderWindow* rw) {}
 		virtual bool keyPressed(const OIS::KeyEvent& evt) { return true; }
 		virtual bool keyReleased(const OIS::KeyEvent& evt) { return true; }
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual bool touchMoved(const OIS::MultiTouchEvent& evt) { return true; }
 		virtual bool touchPressed(const OIS::MultiTouchEvent& evt) { return true; }
 		virtual bool touchReleased(const OIS::MultiTouchEvent& evt) { return true; }
@@ -301,7 +301,7 @@ namespace OgreBites
 
 		Ogre::Root* mRoot;                // OGRE root object
 		Ogre::RenderWindow* mWindow;      // context render window
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) ||(OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		OIS::MultiTouch* mMouse;          // context multitouch device
 		OIS::JoyStick* mAccelerometer;    // context accelerometer device
 #else

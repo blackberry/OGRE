@@ -150,22 +150,22 @@ elseif (APPLE)
   link_directories(${OPENGLES2_LIBRARY_PATH})
   set(PLATFORM_HEADER_INSTALL "APPLE")
   
-elseif (QNX)
+elseif (BLACKBERRY)
     set(PLATFORM_HEADERS 
-    include/Qnx/OgreQnxEGLContext.h
-    include/Qnx/OgreQnxEGLSupport.h
-    include/Qnx/OgreQnxEGLWindow.h
-    include/Qnx/OgreGLES2Util.h
+    include/BlackBerry/OgreBlackBerryEGLContext.h
+    include/BlackBerry/OgreBlackBerryEGLSupport.h
+    include/BlackBerry/OgreBlackBerryEGLWindow.h
+    include/BlackBerry/OgreGLES2Util.h
   )
   set(PLATFORM_SOURCES
-    src/Qnx/OgreQnxEGLContext.cpp
-    src/Qnx/OgreQnxEGLSupport.cpp
-    src/Qnx/OgreQnxEGLWindow.cpp
+    src/BlackBerry/OgreBlackBerryEGLContext.cpp
+    src/BlackBerry/OgreBlackBerryEGLSupport.cpp
+    src/BlackBerry/OgreBlackBerryEGLWindow.cpp
   )
 
-  include_directories(src/Qnx include/Qnx)
+  include_directories(src/BlackBerry include/BlackBerry)
   link_directories(${OPENGLES2_LIBRARY_PATH})
-  set(PLATFORM_HEADER_INSTALL "Qnx")
+  set(PLATFORM_HEADER_INSTALL "BlackBerry")
 elseif (UNIX)
   set(PLATFORM_HEADERS
     include/EGL/X11/OgreX11EGLContext.h

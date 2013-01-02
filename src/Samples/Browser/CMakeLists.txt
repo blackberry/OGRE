@@ -66,10 +66,10 @@ elseif (OGRE_BUILD_PLATFORM_NACL)
   set(HEADER_FILES ${HEADER_FILES}
     include/SampleBrowser_NaCl.h
   )
-elseif(QNX OR OGRE_PLATFORM_QNX)
+elseif(BLACKBERRY OR OGRE_PLATFORM_BLACKBERRY)
 
   set(HEADER_FILES ${HEADER_FILES}
-    include/SampleBrowser_QNX.h
+    include/SampleBrowser_BlackBerry.h
   )
 else ()
   set(HEADER_FILES ${HEADER_FILES}

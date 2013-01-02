@@ -39,7 +39,7 @@ namespace Ogre {
 #define OGRE_PLATFORM_APPLE_IOS 4
 #define OGRE_PLATFORM_ANDROID 5
 #define OGRE_PLATFORM_NACL 6
-#define OGRE_PLATFORM_QNX 7
+#define OGRE_PLATFORM_BLACKBERRY 7
     
 #define OGRE_COMPILER_MSVC 1
 #define OGRE_COMPILER_GNUC 2
@@ -112,8 +112,8 @@ namespace Ogre {
 #   endif
 #elif defined(__ANDROID__)
 #	define OGRE_PLATFORM OGRE_PLATFORM_ANDROID
-#elif defined(__QNX__) || defined(QNX)
-#	define OGRE_PLATFORM OGRE_PLATFORM_QNX
+#elif defined(__QNX__) || defined(BLACKBERRY)
+#	define OGRE_PLATFORM OGRE_PLATFORM_BLACKBERRY
 #elif defined( __native_client__ ) 
 #   define OGRE_PLATFORM OGRE_PLATFORM_NACL
 #   ifndef OGRE_STATIC_LIB
@@ -226,9 +226,9 @@ namespace Ogre {
     
     
     //----------------------------------------------------------------------------
-    // QNX Settings
+    // BlackBerry Settings
     
-     #if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+     #if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
      #   define _OgreExport 
      #	define OGRE_UNICODE_SUPPORT 1
      #   define OGRE_DEBUG_MODE 0
@@ -251,7 +251,7 @@ namespace Ogre {
 //----------------------------------------------------------------------------
 // Linux/Apple/iOs/Android/NaCl Settings
 #if OGRE_PLATFORM == OGRE_PLATFORM_LINUX || OGRE_PLATFORM == OGRE_PLATFORM_APPLE || OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS || \
-    OGRE_PLATFORM == OGRE_PLATFORM_ANDROID || GRE_PLATFORM == OGRE_PLATFORM_QNX|| OGRE_PLATFORM == OGRE_PLATFORM_NACL
+    OGRE_PLATFORM == OGRE_PLATFORM_ANDROID || GRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY || OGRE_PLATFORM == OGRE_PLATFORM_NACL
 
 // Enable GCC symbol visibility
 #   if defined( OGRE_GCC_VISIBILITY )

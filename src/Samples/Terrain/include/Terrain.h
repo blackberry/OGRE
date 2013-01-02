@@ -84,7 +84,7 @@ public:
 	{
 		Vector3 tsPos;
 		terrain->getTerrainPosition(centrepos, &tsPos);
-#if OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS && OGRE_PLATFORM != OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS && OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY
 		if (mKeyboard->isKeyDown(OIS::KC_EQUALS) || mKeyboard->isKeyDown(OIS::KC_ADD) ||
 				mKeyboard->isKeyDown(OIS::KC_MINUS) || mKeyboard->isKeyDown(OIS::KC_SUBTRACT))
 		{
@@ -281,7 +281,7 @@ public:
 
 	bool keyPressed (const OIS::KeyEvent &e)
 	{
-#if OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS && OGRE_PLATFORM != OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS && OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY
 		switch (e.key)
 		{
 		case OIS::KC_S:

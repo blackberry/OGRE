@@ -111,7 +111,7 @@ namespace OgreBites
 @end
 #endif
 
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
 #include <screen/screen.h>
 #endif
 namespace OgreBites
@@ -219,7 +219,7 @@ protected:
 #if OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS
 			mGestureView = 0;
 #endif
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
 		    mscreen  =0 ;
 #endif
 #ifdef USE_RTSHADER_SYSTEM
@@ -659,7 +659,7 @@ protected:
 		{
 			if (mTrayMgr->isDialogVisible()) return true;  // ignore keypresses when dialog is showing
 
-#if OGRE_PLATFORM == OGRE_PLATFORM_ANDROID || (OGRE_PLATFORM == OGRE_PLATFORM_QNX) // TODO: remove this once the BACK event in android is handled
+#if OGRE_PLATFORM == OGRE_PLATFORM_ANDROID || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY) // TODO: remove this once the BACK event in android is handled
 			if (evt.key == OIS::KC_BACK || evt.key == OIS::KC_COMMA)
 #else
 			if (evt.key == OIS::KC_ESCAPE)
@@ -772,13 +772,13 @@ protected:
 		| Extends mousePressed to inject mouse press into tray manager, and to check
 		| for thumbnail clicks, just because we can.
 		-----------------------------------------------------------------------------*/
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual bool touchPressed(const OIS::MultiTouchEvent& evt)
 #else
 		virtual bool mousePressed(const OIS::MouseEvent& evt, OIS::MouseButtonID id)
 #endif
 		{
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)||(OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
             OIS::MultiTouchState state = evt.state;
     #if (OGRE_NO_VIEWPORT_ORIENTATIONMODE == 0) || (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS)
             transformInputState(state);
@@ -792,7 +792,7 @@ protected:
             OIS::MouseEvent orientedEvt((OIS::Object*)evt.device, state);
 #endif
 
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 			if (mTrayMgr->injectMouseDown(orientedEvt)) return true;
 #else
 			if (mTrayMgr->injectMouseDown(orientedEvt, id)) return true;
@@ -814,7 +814,7 @@ protected:
             
 			try
 			{
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)||(OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 				return SampleContext::touchPressed(orientedEvt);
 #else
 				return SampleContext::mousePressed(orientedEvt, id);
@@ -832,13 +832,13 @@ protected:
 		/*-----------------------------------------------------------------------------
 		| Extends mouseReleased to inject mouse release into tray manager.
 		-----------------------------------------------------------------------------*/
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual bool touchReleased(const OIS::MultiTouchEvent& evt)
 #else
 		virtual bool mouseReleased(const OIS::MouseEvent& evt, OIS::MouseButtonID id)
 #endif
 		{
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
             OIS::MultiTouchState state = evt.state;
     #if (OGRE_NO_VIEWPORT_ORIENTATIONMODE == 0) || (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS)
             transformInputState(state);
@@ -852,7 +852,7 @@ protected:
             OIS::MouseEvent orientedEvt((OIS::Object*)evt.device, state);
 #endif
 
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 			if (mTrayMgr->injectMouseUp(orientedEvt)) return true;
 #else
 			if (mTrayMgr->injectMouseUp(orientedEvt, id)) return true;
@@ -860,7 +860,7 @@ protected:
 
 			try
 			{
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 				return SampleContext::touchReleased(orientedEvt);
 #else
 				return SampleContext::mouseReleased(orientedEvt, id);
@@ -879,13 +879,13 @@ protected:
 		| Extends mouseMoved to inject mouse position into tray manager, and checks
 		| for mouse wheel movements to slide the carousel, because we can.
 		-----------------------------------------------------------------------------*/
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual bool touchMoved(const OIS::MultiTouchEvent& evt)
 #else
 		virtual bool mouseMoved(const OIS::MouseEvent& evt)
 #endif
 		{
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
             OIS::MultiTouchState state = evt.state;
     #if (OGRE_NO_VIEWPORT_ORIENTATIONMODE == 0) || (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS)
             transformInputState(state);
@@ -910,7 +910,7 @@ protected:
             
 			try
 			{
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 				return SampleContext::touchMoved(orientedEvt);
 #else
 				return SampleContext::mouseMoved(orientedEvt);
@@ -925,7 +925,7 @@ protected:
 			return true;
 		}
 
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
         /*-----------------------------------------------------------------------------
          | Extends touchCancelled to inject an event that a touch was cancelled.
          -----------------------------------------------------------------------------*/
@@ -1201,7 +1201,7 @@ protected:
 
 			Ogre::StringVector unloadedSamplePlugins;
 
-#if OGRE_PLATFORM == OGRE_PLATFORM_ANDROID || (OGRE_PLATFORM == OGRE_PLATFORM_QNX) //Todo: QNX FIXME
+#if OGRE_PLATFORM == OGRE_PLATFORM_ANDROID || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY) //Todo: BLACKBERRY FIXME
 			Ogre::String startupSampleTitle = "";
 			Ogre::String sampleDir = "";
 			Ogre::StringVector sampleList;
@@ -1209,7 +1209,7 @@ protected:
 			sampleList.push_back("Sample_CameraTrack");
 			sampleList.push_back("Sample_CelShading");
 			sampleList.push_back("Sample_Character");
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
 			sampleList.push_back("Sample_BezierPatch");
 			sampleList.push_back("Sample_CubeMapping");
 			sampleList.push_back("Sample_Dot3Bump");
@@ -1466,7 +1466,7 @@ protected:
 
 			// create sample viewing controls
 			mTitleLabel = mTrayMgr->createLabel(TL_LEFT, "SampleTitle", "");
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)||(OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 			mDescBox = mTrayMgr->createTextBox(TL_LEFT, "SampleInfo", "Sample Info", 120, 100);
 			mCategoryMenu = mTrayMgr->createThickSelectMenu(TL_LEFT, "CategoryMenu", "Select Category", 120, 10); 
 			mSampleMenu = mTrayMgr->createThickSelectMenu(TL_LEFT, "SampleMenu", "Select Sample", 120, 10);
@@ -1487,7 +1487,7 @@ protected:
 
 			// create configuration screen label and renderer menu
 			mTrayMgr->createLabel(TL_NONE, "ConfigLabel", "Configuration");
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) ||(OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 			mRendererMenu = mTrayMgr->createLongSelectMenu(TL_NONE, "RendererMenu", "Render System", 216, 115, 10);
 #else
 			mRendererMenu = mTrayMgr->createLongSelectMenu(TL_NONE, "RendererMenu", "Render System", 450, 240, 10);
@@ -1685,7 +1685,7 @@ protected:
 
 				mShaderGenerator->addSceneManager(sceneMgr);
 
-#if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID && OGRE_PLATFORM != OGRE_PLATFORM_NACL && (OGRE_PLATFORM != OGRE_PLATFORM_QNX)
+#if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID && OGRE_PLATFORM != OGRE_PLATFORM_NACL && (OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY)
 				// Setup core libraries and shader cache path.
 				Ogre::StringVector groupVector = Ogre::ResourceGroupManager::getSingleton().getResourceGroups();
 				Ogre::StringVector::iterator itGroup = groupVector.begin();
@@ -1800,7 +1800,7 @@ protected:
 #if OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS
         SampleBrowserGestureView *mGestureView;
 #endif
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
 		screen_context_t mscreen;    //Blackbery screen handle
 #endif
         bool mIsShuttingDown;

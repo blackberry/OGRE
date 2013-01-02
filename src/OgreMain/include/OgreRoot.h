@@ -40,7 +40,7 @@ THE SOFTWARE.
 
 #include <exception>
 
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
 #include <screen/screen.h>
 #endif
 
@@ -119,7 +119,7 @@ namespace Ogre
 		Real mFrameSmoothingTime;
 		bool mRemoveQueueStructuresOnClear;
 		Real mDefaultMinPixelSize;
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
 		screen_context_t mCurrentScreen; 
 #endif
 
@@ -231,7 +231,7 @@ namespace Ogre
         */
         void saveConfig(void);
         
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
 		screen_context_t getBlackberryScreen() {return mCurrentScreen; } 
         void setBlackberryScreen(screen_context_t screen){mCurrentScreen = screen;}
 #endif
