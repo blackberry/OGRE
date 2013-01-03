@@ -260,7 +260,7 @@ namespace OgreBites
 		/*-----------------------------------------------------------------------------
 		| Processes mouse movement differently for each style.
 		-----------------------------------------------------------------------------*/
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)|| (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)|| (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual void injectMouseMove(const OIS::MultiTouchEvent& evt)
 #else
 		virtual void injectMouseMove(const OIS::MouseEvent& evt)
@@ -303,7 +303,7 @@ namespace OgreBites
 		| Processes mouse presses. Only applies for orbit style.
 		| Left button is for orbiting, and right button is for zooming.
 		-----------------------------------------------------------------------------*/
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual void injectMouseDown(const OIS::MultiTouchEvent& evt)
 		{
 			if (mStyle == CS_ORBIT)
@@ -326,7 +326,7 @@ namespace OgreBites
 		| Processes mouse releases. Only applies for orbit style.
 		| Left button is for orbiting, and right button is for zooming.
 		-----------------------------------------------------------------------------*/
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual void injectMouseUp(const OIS::MultiTouchEvent& evt)
 		{
 			if (mStyle == CS_ORBIT)

@@ -167,8 +167,8 @@ if ((CMAKE_COMPILER_IS_GNUCXX OR CMAKE_COMPILER_IS_CLANGXX) AND NOT MINGW)
 endif ((CMAKE_COMPILER_IS_GNUCXX OR CMAKE_COMPILER_IS_CLANGXX) AND NOT MINGW)
 
 # determine system endianess
-if (MSVC OR QNX)
-  # This doesn't work on VS 2010 or cross compiling for QNX
+if (MSVC OR BLACKBERRY)
+  # This doesn't work on VS 2010 or cross compiling for BlackBerry
   # MSVC only builds for intel anyway
   set(OGRE_TEST_BIG_ENDIAN FALSE)
 else()
@@ -329,11 +329,11 @@ set(OGRE_LIB_DIRECTORY "lib${LIB_SUFFIX}" CACHE STRING "Install path for librari
 option(OGRE_UNITY_BUILD "Enable unity build for Ogre." FALSE)
 set(OGRE_UNITY_FILES_PER_UNIT "50" CACHE STRING "Number of files per compilation unit in Unity build.")
 
-#set QNX specific var
-if (QNX)
-  SET(TargetPlatform "Qnx")
+#set BlackBerry specific var
+if (BLACKBERRY)
+  SET(TargetPlatform "BlackBerry")
   SET(OGRE_BUILD_RENDERSYSTEM_GLES FALSE)
-  SET(OGRE_PLATFORM OGRE_PLATFORM_QNX)
+  SET(OGRE_PLATFORM OGRE_PLATFORM_BLACKBERRY)
 endif()
 
 # hide advanced options

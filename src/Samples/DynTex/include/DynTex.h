@@ -51,7 +51,7 @@ public:
 
 		return SdkSample::frameRenderingQueued(evt);  // don't forget the parent class updates!
 	}
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 	bool touchPressed(const OIS::MultiTouchEvent& evt)
 	{
 		if (mTrayMgr->injectMouseDown(evt)) return true;

@@ -25,14 +25,14 @@ if(OGRE_BUILD_PLATFORM_APPLE_IOS)
     "${OGRE_BINARY_DIR}/../iOSDependencies"
     "${OGRE_SOURCE_DIR}/../iOSDependencies"
   )
-  elseif(OGRE_BUILD_PLATFORM_QNX)
+  elseif(OGRE_BUILD_PLATFORM_BLACKBERRY)
   set(OGRE_DEP_SEARCH_PATH 
     ${OGRE_DEPENDENCIES_DIR}
     ${ENV_OGRE_DEPENDENCIES_DIR}
-    "${OGRE_BINARY_DIR}/QNXDependencies"
-    "${OGRE_SOURCE_DIR}/QNXDependencies"
-    "${OGRE_BINARY_DIR}/../QNXDependencies"
-    "${OGRE_SOURCE_DIR}/../QNXDependencies"
+    "${OGRE_BINARY_DIR}/BlackBerryDependencies"
+    "${OGRE_SOURCE_DIR}/BlackBerryDependencies"
+    "${OGRE_BINARY_DIR}/../BlackBerryDependencies"
+    "${OGRE_SOURCE_DIR}/../BlackBerryDependencies"
   )
   else()
   set(OGRE_DEP_SEARCH_PATH 
@@ -81,7 +81,7 @@ find_package(Freetype)
 macro_log_feature(FREETYPE_FOUND "freetype" "Portable font engine" "http://www.freetype.org" TRUE "" "")
 
 # Find X11
-if (UNIX AND NOT APPLE AND NOT QNX)
+if (UNIX AND NOT APPLE AND NOT BLACKBERRY)
   find_package(X11)
   macro_log_feature(X11_FOUND "X11" "X Window system" "http://www.x.org" TRUE "" "")
   macro_log_feature(X11_Xt_FOUND "Xt" "X Toolkit" "http://www.x.org" TRUE "" "")
@@ -118,10 +118,10 @@ endif()
 #######################################################################
 
 # Find Cg
-if (NOT OGRE_BUILD_PLATFORM_APPLE_IOS AND NOT QNX)
+if (NOT OGRE_BUILD_PLATFORM_APPLE_IOS AND NOT BLACKBERRY)
   find_package(Cg)
   macro_log_feature(Cg_FOUND "cg" "C for graphics shader language" "http://developer.nvidia.com/object/cg_toolkit.html" FALSE "" "")
-endif (NOT OGRE_BUILD_PLATFORM_APPLE_IOS AND NOT QNX)
+endif (NOT OGRE_BUILD_PLATFORM_APPLE_IOS AND NOT BLACKBERRY)
 
 # Find Boost
 # Prefer static linking in all cases

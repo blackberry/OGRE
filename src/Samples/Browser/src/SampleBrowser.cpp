@@ -37,8 +37,8 @@
 #include "SampleBrowser_OSX.h"
 #elif OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS
 #include "SampleBrowser_iOS.h"
-#elif OGRE_PLATFORM == OGRE_PLATFORM_QNX
-#include "SampleBrowser_QNX.h"
+#elif OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
+#include "SampleBrowser_BlackBerry.h"
 #elif OGRE_PLATFORM == OGRE_PLATFORM_NACL
 #include "SampleBrowser_NaCl.h"
 #endif
@@ -81,8 +81,8 @@ int main(int argc, char *argv[])
             nograb = true;
 #endif
 
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
-        startQnxApp();
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
+        startBlackBerryApp();
 #else
 		OgreBites::SampleBrowser brows (nograb);
 		brows.go();
