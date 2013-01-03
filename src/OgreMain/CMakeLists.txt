@@ -575,22 +575,22 @@ else ()
     set(PLATFORM_HEADER_INSTALL "OSX")
   endif ()
 
-elseif(QNX)
+elseif(BLACKBERRY)
     set(PLATFORM_HEADER_FILES
-    include/Qnx/OgreConfigDialogImp.h
-    include/Qnx/OgreErrorDialogImp.h
-    include/Qnx/OgreTimerImp.h
-    include/Qnx/OgreQnxLogListener.h
+    include/BlackBerry/OgreConfigDialogImp.h
+    include/BlackBerry/OgreErrorDialogImp.h
+    include/BlackBerry/OgreTimerImp.h
+    include/BlackBerry/OgreBlackBerryLogListener.h
   )
   set(PLATFORM_SOURCE_FILES
-    src/Qnx/OgreConfigDialog.cpp
-    src/Qnx/OgreErrorDialog.cpp
-    src/Qnx/OgreTimer.cpp
+    src/BlackBerry/OgreConfigDialog.cpp
+    src/BlackBerry/OgreErrorDialog.cpp
+    src/BlackBerry/OgreTimer.cpp
     src/OgreSearchOps.cpp
-    src/Qnx/OgreQnxLogListener.cpp
+    src/BlackBerry/OgreBlackBerryLogListener.cpp
   )
 
-set(PLATFORM_HEADER_INSTALL "Qnx")
+set(PLATFORM_HEADER_INSTALL "BlackBerry")
 
 
 elseif (UNIX)

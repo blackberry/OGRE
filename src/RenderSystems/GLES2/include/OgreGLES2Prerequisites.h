@@ -55,7 +55,7 @@ THE SOFTWARE.
 #   ifdef __OBJC__
 #       include <OpenGLES/EAGL.h>
 #   endif
-#elif (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX) ||(OGRE_PLATFORM == OGRE_PLATFORM_NACL)
+#elif (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY) ||(OGRE_PLATFORM == OGRE_PLATFORM_NACL)
 #	ifndef GL_GLEXT_PROTOTYPES
 #		define  GL_GLEXT_PROTOTYPES
 #	endif
@@ -72,7 +72,7 @@ THE SOFTWARE.
 #       undef GL_OES_get_program_binary
 #       undef GL_OES_mapbuffer
 #	endif
-#   if (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#   if (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 #      undef GL_OES_get_program_binary
 #      undef GL_EXT_occlusion_query_boolean
 #      undef GL_EXT_debug_label

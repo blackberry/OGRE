@@ -51,8 +51,8 @@ THE SOFTWARE.
 #   include "OgreEAGL2Window.h"
 #elif OGRE_PLATFORM == OGRE_PLATFORM_ANDROID
 #	include "OgreAndroidWindow.h"
-#elif OGRE_PLATFORM == OGRE_PLATFORM_QNX
-#	include "OgreQnxEGLWindow.h"
+#elif OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
+#	include "OgreBlackBerryEGLWindow.h"
 #elif OGRE_PLATFORM == OGRE_PLATFORM_NACL
 #	include "OgreNaClWindow.h"
 #else
@@ -303,7 +303,7 @@ namespace Ogre {
         rsc->setCapability(RSC_FRAGMENT_PROGRAM);
 
         // Separate shader objects
-#if OGRE_PLATFORM != OGRE_PLATFORM_NACL && OGRE_PLATFORM != OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM != OGRE_PLATFORM_NACL && OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY
         if(mGLSupport->checkExtension("GL_EXT_separate_shader_objects"))
             rsc->setCapability(RSC_SEPARATE_SHADER_OBJECTS);
 #endif
@@ -2152,7 +2152,7 @@ namespace Ogre {
     //---------------------------------------------------------------------
     void GLES2RenderSystem::beginProfileEvent( const String &eventName )
     {
-#if GL_EXT_debug_marker && OGRE_PLATFORM != OGRE_PLATFORM_NACL && OGRE_PLATFORM != OGRE_PLATFORM_QNX
+#if GL_EXT_debug_marker && OGRE_PLATFORM != OGRE_PLATFORM_NACL && OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY
         glPushGroupMarkerEXT(0, eventName.c_str());
 #endif
     }
@@ -2160,7 +2160,7 @@ namespace Ogre {
     //---------------------------------------------------------------------
     void GLES2RenderSystem::endProfileEvent( void )
     {
-#if GL_EXT_debug_marker && OGRE_PLATFORM != OGRE_PLATFORM_NACL && OGRE_PLATFORM != OGRE_PLATFORM_QNX
+#if GL_EXT_debug_marker && OGRE_PLATFORM != OGRE_PLATFORM_NACL && OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY
         glPopGroupMarkerEXT();
 #endif
     }
@@ -2171,7 +2171,7 @@ namespace Ogre {
         if( eventName.empty() )
             return;
 
-#if GL_EXT_debug_marker && OGRE_PLATFORM != OGRE_PLATFORM_NACL && OGRE_PLATFORM != OGRE_PLATFORM_QNX
+#if GL_EXT_debug_marker && OGRE_PLATFORM != OGRE_PLATFORM_NACL && OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY
         glInsertEventMarkerEXT(0, eventName.c_str());
 #endif
     }

@@ -794,7 +794,7 @@ namespace Ogre {
         glBindTexture(target, id);
         GL_CHECK_ERROR;
 
-#if GL_APPLE_texture_max_level && OGRE_PLATFORM != OGRE_PLATFORM_NACL && OGRE_PLATFORM != OGRE_PLATFORM_QNX
+#if GL_APPLE_texture_max_level && OGRE_PLATFORM != OGRE_PLATFORM_NACL && OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY
         glTexParameteri(target, GL_TEXTURE_MAX_LEVEL_APPLE, 1000 );
         GL_CHECK_ERROR;
 #endif
@@ -912,7 +912,7 @@ namespace Ogre {
         // Allocate storage for depth buffer
         if (numSamples > 0)
         {
-#if GL_APPLE_framebuffer_multisample && OGRE_PLATFORM != OGRE_PLATFORM_NACL&& OGRE_PLATFORM != OGRE_PLATFORM_QNX  && OGRE_PLATFORM != OGRE_PLATFORM_WIN32
+#if GL_APPLE_framebuffer_multisample && OGRE_PLATFORM != OGRE_PLATFORM_NACL&& OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY  && OGRE_PLATFORM != OGRE_PLATFORM_WIN32
             glRenderbufferStorageMultisampleAPPLE(GL_RENDERBUFFER, 
                                                 numSamples, format, width, height);
             GL_CHECK_ERROR;

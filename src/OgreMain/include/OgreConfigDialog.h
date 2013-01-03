@@ -50,8 +50,8 @@ THE SOFTWARE.
 # include "iOS/OgreConfigDialogImp.h"
 #elif OGRE_PLATFORM == OGRE_PLATFORM_ANDROID
 # include "Android/OgreConfigDialogImp.h"
-#elif OGRE_PLATFORM == OGRE_PLATFORM_QNX
-# include "Qnx/OgreConfigDialogImp.h"
+#elif OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
+# include "BlackBerry/OgreConfigDialogImp.h"
 #endif
 
 #endif

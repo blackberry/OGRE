@@ -173,7 +173,7 @@ namespace Ogre {
 #else
 		defaultQ->setWorkersCanAccessRenderSystem(false);
 #endif
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
 		mCurrentScreen =0;  
 #endif
 		mWorkQueue = defaultQ;

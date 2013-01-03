@@ -103,7 +103,7 @@ namespace OgreBites
 	class SampleContext :
 		public Ogre::FrameListener,
 		public Ogre::WindowEventListener,
-#if (OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS) && (OGRE_PLATFORM != OGRE_PLATFORM_ANDROID) && (OGRE_PLATFORM != OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS) && (OGRE_PLATFORM != OGRE_PLATFORM_ANDROID) && (OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY)
 		public OIS::KeyListener,
 		public OIS::MouseListener
 #else
@@ -126,7 +126,7 @@ namespace OgreBites
 #if OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS
 			mMouse = 0;
 			mAccelerometer = 0;
-#elif OGRE_PLATFORM == OGRE_PLATFORM_ANDROID || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#elif OGRE_PLATFORM == OGRE_PLATFORM_ANDROID || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 			mMouse = 0;
 			mKeyboard = 0;
 #else
@@ -139,7 +139,7 @@ namespace OgreBites
 		{
 			OGRE_DELETE_T(mFSLayer, FileSystemLayer, Ogre::MEMCATEGORY_GENERAL);
 		}
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
 		Ogre::Root* getOgreRoot(){return mRoot;}              // OGRE root
 #endif
 		virtual Ogre::RenderWindow* getRenderWindow()
@@ -209,7 +209,7 @@ namespace OgreBites
 				// test system capabilities against sample requirements
 				s->testCapabilities(mRoot->getRenderSystem()->getCapabilities());
 
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 				s->_setup(mWindow, mMouse, mFSLayer);   // start new sample
 #else
 				s->_setup(mWindow, mKeyboard, mMouse, mFSLayer);   // start new sample
@@ -228,7 +228,7 @@ namespace OgreBites
 		-----------------------------------------------------------------------------*/
 		virtual void initApp( Sample* initialSample = 0 )
 		{
-#if OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
             createRoot();
 
 			if (!oneTimeConfig()) return;
@@ -292,7 +292,7 @@ namespace OgreBites
 #if OGRE_PLATFORM == OGRE_PLATFORM_ANDROID
 			shutdown();
 #else
-#if (OGRE_PLATFORM != OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY)
 			mRoot->saveConfig();
 #endif
 			shutdown();
@@ -310,7 +310,7 @@ namespace OgreBites
 #if OGRE_PLATFORM != OGRE_PLATFORM_NACL
 		virtual void go(Sample* initialSample = 0)
 		{
-#if OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS || ((OGRE_PLATFORM == OGRE_PLATFORM_APPLE) && __LP64__) || OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS || ((OGRE_PLATFORM == OGRE_PLATFORM_APPLE) && __LP64__) || OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
             createRoot();
 
 			if (!oneTimeConfig()) return;
@@ -321,7 +321,7 @@ namespace OgreBites
 
             if (!mFirstRun) recoverLastSample();
             else if (initialSample) runSample(initialSample);
-#if OGRE_PLATFORM != OGRE_PLATFORM_QNX //QNX fixme
+#if OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY // BLACKBERRY fixme
             mRoot->saveConfig();
 #endif
 
@@ -413,7 +413,7 @@ namespace OgreBites
 			// manually call sample callback to ensure correct order
 			if (mCurrentSample && !mSamplePaused) mCurrentSample->windowResized(rw);
 
-#if (OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS) && (OGRE_PLATFORM != OGRE_PLATFORM_ANDROID) && (OGRE_PLATFORM != OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS) && (OGRE_PLATFORM != OGRE_PLATFORM_ANDROID) && (OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY)
 			const OIS::MouseState& ms = mMouse->getMouseState();
 			ms.width = rw->getWidth();
 			ms.height = rw->getHeight();
@@ -458,7 +458,7 @@ namespace OgreBites
 		}
 
 #if (OGRE_NO_VIEWPORT_ORIENTATIONMODE == 0)
-    #if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+    #if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
         void transformInputState(OIS::MultiTouchState &state)
     #else
         void transformInputState(OIS::MouseState &state)
@@ -533,7 +533,7 @@ namespace OgreBites
     }
 #endif
 
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)||(OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual bool touchMoved(const OIS::MultiTouchEvent& evt)
 		{
 			if (mCurrentSample && !mSamplePaused) return mCurrentSample->touchMoved(evt);
@@ -547,7 +547,7 @@ namespace OgreBites
 		}
 #endif
 
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)||(OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual bool touchPressed(const OIS::MultiTouchEvent& evt)
 		{
 			if (mCurrentSample && !mSamplePaused) return mCurrentSample->touchPressed(evt);
@@ -561,7 +561,7 @@ namespace OgreBites
 		}
 #endif
 
-#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID)||(OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#if (OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS) || (OGRE_PLATFORM == OGRE_PLATFORM_ANDROID) || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		virtual bool touchReleased(const OIS::MultiTouchEvent& evt)
 		{
 			if (mCurrentSample && !mSamplePaused) return mCurrentSample->touchReleased(evt);
@@ -643,7 +643,7 @@ namespace OgreBites
 		-----------------------------------------------------------------------------*/
 		virtual void setupInput(bool nograb = false)
 		{
-#if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID && (OGRE_PLATFORM != OGRE_PLATFORM_QNX)
+#if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID && (OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY)
 			OIS::ParamList pl;
 			size_t winHandle = 0;
 			std::ostringstream winHandleStr;
@@ -677,7 +677,7 @@ namespace OgreBites
 		-----------------------------------------------------------------------------*/
 		virtual void createInputDevices()
 		{
-#if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID && (OGRE_PLATFORM != OGRE_PLATFORM_QNX)
+#if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID && (OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY)
 #if OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS
 			mMouse = static_cast<OIS::MultiTouch*>(mInputMgr->createInputObject(OIS::OISMultiTouch, true));
 			mAccelerometer = static_cast<OIS::JoyStick*>(mInputMgr->createInputObject(OIS::OISJoyStick, true));
@@ -706,7 +706,7 @@ namespace OgreBites
 #else
 			// load resource paths from config file
 			Ogre::ConfigFile cf;
-#if OGRE_PLATFORM == OGRE_PLATFORM_QNX
+#if OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY
 			cf.load(mFSLayer->getConfigFilePath("app/native/resources.cfg"));
 #else
 			cf.load(mFSLayer->getConfigFilePath("resources.cfg"));
@@ -824,7 +824,7 @@ namespace OgreBites
 		-----------------------------------------------------------------------------*/
 		virtual void shutdownInput()
 		{
-#if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID && (OGRE_PLATFORM != OGRE_PLATFORM_QNX)
+#if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID && (OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY)
 			if (mInputMgr)
 			{
 #if OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS
@@ -845,7 +845,7 @@ namespace OgreBites
 		-----------------------------------------------------------------------------*/
 		virtual void captureInputDevices()
 		{
-#if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID && (OGRE_PLATFORM != OGRE_PLATFORM_QNX)
+#if OGRE_PLATFORM != OGRE_PLATFORM_ANDROID && (OGRE_PLATFORM != OGRE_PLATFORM_BLACKBERRY)
 #if OGRE_PLATFORM != OGRE_PLATFORM_APPLE_IOS
 			mKeyboard->capture();
 #else
@@ -864,7 +864,7 @@ namespace OgreBites
 #if OGRE_PLATFORM == OGRE_PLATFORM_APPLE_IOS
 		OIS::MultiTouch* mMouse;        // multitouch device
 		OIS::JoyStick* mAccelerometer;  // accelerometer device
-#elif OGRE_PLATFORM == OGRE_PLATFORM_ANDROID || (OGRE_PLATFORM == OGRE_PLATFORM_QNX)
+#elif OGRE_PLATFORM == OGRE_PLATFORM_ANDROID || (OGRE_PLATFORM == OGRE_PLATFORM_BLACKBERRY)
 		OIS::MultiTouch* mMouse;        // multitouch device
 		OIS::Keyboard* mKeyboard;       // keyboard device
 #else
