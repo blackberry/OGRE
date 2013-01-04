@@ -195,26 +195,13 @@ http://developer.apple.com/library/ios/documentation/Xcode/Conceptual/iphone_dev
 The following instructions are for building and deploying the Ogre3D LIB and sample browser app.
 
 Pre-requisites:
-
-1) Install BB 10 NDK.
-2) Install CMake.
-3) Pre-built Ogre3D dependency LIBs for BlackBerry, which can be found in blackberry/OGRE under the root "BlackBerryDependencies" folder complete with header files.
+i) BB 10 NDK.
+ii) CMake.
+Pre-built Ogre3D dependency LIBs for BlackBerry are provided under "src/BlackBerryDependencies" ready-to-use for your convenience.
 
 How to build:
 
-1) Create a directory "BlackBerryDependencies" under the Ogre3D source root and copy the pre-built Ogre3D dependency LIBs and header files into it:
-
-MacOSX/ Linux:
-cd src
-mkdir BlackBerryDependencies
-cp -R ../BlackBerryDependencies/ ./BlackBerryDependencies
-
-Windows:
-cd src
-mkdir BlackBerryDependencies
-xcopy ..\BlackBerryDependencies .\BlackBerryDependencies /si
-
-2) Setup BlackBerry NDK environment
+1) Setup BlackBerry NDK environment
 
 MacOSX/ Linux:
 source /Applications/bbndk/bbndk-env.sh
@@ -222,7 +209,7 @@ source /Applications/bbndk/bbndk-env.sh
 Windows: 
 C:/bbndk/bbndk-env.bat
 
-3) Build with CMake:
+2) Build with CMake:
 
 mkdir build
 cd build
@@ -238,7 +225,7 @@ make
 
 Note: The port was done without enabling boost. There is already Boost Porting for BB10 in the github, if you want to enable multi-threading in Ogre3D, which Boost LIB is needed. You can refer Ogre3D doc for how to enable multithreading with Boost.
 
-4) Package and Deploy the sample app to a BlackBerry 10 device:
+3) Package and Deploy the sample app to a BlackBerry 10 device:
 
 MacOSX/ Linux:
 cp ../CMake/toolchain/bar-descriptor.xml bar-descriptor.xml
