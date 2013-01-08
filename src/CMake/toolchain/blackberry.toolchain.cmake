@@ -6,7 +6,7 @@
 #   $ source /absolute/path/to/the/bbndk/bbndk-env.sh
 #   $ mkdir build
 #   $ cd build
-#   $ cmake .. -DCMAKE_TOOLCHAIN_FILE="../CMake/toolchain/blackberry.toolchain.cmake" -DTargetPlatform="BlackBerry" -DOGRE_DEPENDENCIES_DIR="../BlackBerryDependencies" -DOGRE_BUILD_RENDERSYSTEM_GLES2=TRUE -DOGRE_STATIC=TRUE  -DOGRE_BUILD_COMPONENT_PAGING=TRUE -DOGRE_BUILD_COMPONENT_TERRAIN=TRUE -DOGRE_BUILD_COMPONENT_RTSHADERSYSTEM=TRUE -DOGRE_BUILD_PLUGIN_BSP=FALSE -DOGRE_BUILD_PLUGIN_PCZ=FALSE -DOGRE_BUILD_RENDERSYSTEM_GLES=FALSE -DOGRE_BUILD_TESTS=FALSE -DOGRE_BUILD_TOOLS=FALSE -DCMAKE_VERBOSE_MAKEFILE=TRUE -G "Eclipse CDT4 - Unix Makefiles"
+#   $ cmake .. -DCMAKE_TOOLCHAIN_FILE="../CMake/toolchain/blackberry.toolchain.cmake" -DTargetPlatform="BlackBerry" -DBLACKBERRY_ARCHITECTURE=arm -DOGRE_DEPENDENCIES_DIR="../BlackBerryDependencies" -DOGRE_BUILD_RENDERSYSTEM_GLES2=TRUE -DOGRE_STATIC=TRUE  -DOGRE_BUILD_COMPONENT_PAGING=TRUE -DOGRE_BUILD_COMPONENT_TERRAIN=TRUE -DOGRE_BUILD_COMPONENT_RTSHADERSYSTEM=TRUE -DOGRE_BUILD_PLUGIN_BSP=FALSE -DOGRE_BUILD_PLUGIN_PCZ=FALSE -DOGRE_BUILD_RENDERSYSTEM_GLES=FALSE -DOGRE_BUILD_TESTS=FALSE -DOGRE_BUILD_TOOLS=FALSE -DCMAKE_VERBOSE_MAKEFILE=TRUE -G "Eclipse CDT4 - Unix Makefiles"
 #   $ make -j8
 #
 #  Usage Mac:
@@ -16,7 +16,7 @@
 #   > /absolute/path/to/the/bbndk/bbndk-env.bat
 #   > mkdir build
 #   > cd build
-#   > cmake .. -DCMAKE_TOOLCHAIN_FILE="../CMake/toolchain/blackberry.toolchain.cmake" -DTargetPlatform="BlackBerry" -DOGRE_DEPENDENCIES_DIR="../BlackBerryDependencies" -DOGRE_BUILD_RENDERSYSTEM_GLES2=TRUE -DOGRE_STATIC=TRUE  -DOGRE_BUILD_COMPONENT_PAGING=TRUE -DOGRE_BUILD_COMPONENT_TERRAIN=TRUE -DOGRE_BUILD_COMPONENT_RTSHADERSYSTEM=TRUE -DOGRE_BUILD_PLUGIN_BSP=FALSE -DOGRE_BUILD_PLUGIN_PCZ=FALSE -DOGRE_BUILD_RENDERSYSTEM_GLES=FALSE -DOGRE_BUILD_TESTS=FALSE -DOGRE_BUILD_TOOLS=FALSE -DCMAKE_VERBOSE_MAKEFILE=TRUE -G "Eclipse CDT4 - Unix Makefiles"
+#   > cmake .. -DCMAKE_TOOLCHAIN_FILE="../CMake/toolchain/blackberry.toolchain.cmake" -DTargetPlatform="BlackBerry" -DBLACKBERRY_ARCHITECTURE=arm -DOGRE_DEPENDENCIES_DIR="../BlackBerryDependencies" -DOGRE_BUILD_RENDERSYSTEM_GLES2=TRUE -DOGRE_STATIC=TRUE  -DOGRE_BUILD_COMPONENT_PAGING=TRUE -DOGRE_BUILD_COMPONENT_TERRAIN=TRUE -DOGRE_BUILD_COMPONENT_RTSHADERSYSTEM=TRUE -DOGRE_BUILD_PLUGIN_BSP=FALSE -DOGRE_BUILD_PLUGIN_PCZ=FALSE -DOGRE_BUILD_RENDERSYSTEM_GLES=FALSE -DOGRE_BUILD_TESTS=FALSE -DOGRE_BUILD_TOOLS=FALSE -DCMAKE_VERBOSE_MAKEFILE=TRUE -G "Eclipse CDT4 - Unix Makefiles"
 #   > make -j8
 #
 
@@ -58,13 +58,18 @@ if( CMAKE_VERSION VERSION_LESS 2.8.5 )
 endif()
 
 # There may be a way to make cmake reduce these TODO
-set( CMAKE_STRIP        "$ENV{QNX_HOST}/usr/bin/ntoarm-strip${TOOL_OS_SUFFIX}"       CACHE PATH "strip" )
-set( CMAKE_AR           "$ENV{QNX_HOST}/usr/bin/ntoarm-ar${TOOL_OS_SUFFIX}"          CACHE PATH "archive" )
-set( CMAKE_LINKER       "$ENV{QNX_HOST}/usr/bin/ntoarmv7-ld${TOOL_OS_SUFFIX}"        CACHE PATH "linker" )
-set( CMAKE_NM           "$ENV{QNX_HOST}/usr/bin/ntoarmv7-nm${TOOL_OS_SUFFIX}"        CACHE PATH "nm" )
-set( CMAKE_OBJCOPY      "$ENV{QNX_HOST}/usr/bin/ntoarmv7-objcopy${TOOL_OS_SUFFIX}"   CACHE PATH "objcopy" )
-set( CMAKE_OBJDUMP      "$ENV{QNX_HOST}/usr/bin/ntoarmv7-objdump${TOOL_OS_SUFFIX}"   CACHE PATH "objdump" )
-set( CMAKE_RANLIB       "$ENV{QNX_HOST}/usr/bin/ntoarm-ranlib${TOOL_OS_SUFFIX}"      CACHE PATH "ranlib" )
+if( BLACKBERRY_ARCHITECTURE STREQUAL "arm" )
+ set( NEUTRINO_ARCH "v7" )
+else()
+ set( NEUTRINO_ARCH "" )
+endif()
+set( CMAKE_STRIP        "$ENV{QNX_HOST}/usr/bin/nto${BLACKBERRY_ARCHITECTURE}-strip${TOOL_OS_SUFFIX}"       CACHE PATH "strip" )
+set( CMAKE_AR           "$ENV{QNX_HOST}/usr/bin/nto${BLACKBERRY_ARCHITECTURE}-ar${TOOL_OS_SUFFIX}"          CACHE PATH "archive" )
+set( CMAKE_LINKER       "$ENV{QNX_HOST}/usr/bin/nto${BLACKBERRY_ARCHITECTURE}${NEUTRINO_ARCH}-ld${TOOL_OS_SUFFIX}"        CACHE PATH "linker" )
+set( CMAKE_NM           "$ENV{QNX_HOST}/usr/bin/nto${BLACKBERRY_ARCHITECTURE}${NEUTRINO_ARCH}-nm${TOOL_OS_SUFFIX}"        CACHE PATH "nm" )
+set( CMAKE_OBJCOPY      "$ENV{QNX_HOST}/usr/bin/nto${BLACKBERRY_ARCHITECTURE}${NEUTRINO_ARCH}-objcopy${TOOL_OS_SUFFIX}"   CACHE PATH "objcopy" )
+set( CMAKE_OBJDUMP      "$ENV{QNX_HOST}/usr/bin/nto${BLACKBERRY_ARCHITECTURE}${NEUTRINO_ARCH}-objdump${TOOL_OS_SUFFIX}"   CACHE PATH "objdump" )
+set( CMAKE_RANLIB       "$ENV{QNX_HOST}/usr/bin/nto${BLACKBERRY_ARCHITECTURE}-ranlib${TOOL_OS_SUFFIX}"      CACHE PATH "ranlib" )
 
 # Installer
 #if( APPLE )
@@ -89,8 +94,13 @@ endif()
 list( APPEND BLACKBERRY_SYSTEM_INCLUDE_DIRS "${BLACKBERRY_TARGET_ROOT}/qnx6/usr/include" )
 
 # Flags and preprocessor definitions
-set( BLACKBERRY_CC_FLAGS  " -V4.6.3,gcc_ntoarmv7le -D__QNX__" )
-set( BLACKBERRY_CXX_FLAGS " -V4.6.3,gcc_ntoarmv7le -Y_gpp -D__QNX__" )
+if( BLACKBERRY_ARCHITECTURE STREQUAL "arm" )
+ set( BLACKBERRY_CC_FLAGS  " -V4.6.3,gcc_ntoarmv7le -D__QNX__" )
+ set( BLACKBERRY_CXX_FLAGS " -V4.6.3,gcc_ntoarmv7le -Y_gpp -D__QNX__" )
+else()
+ set( BLACKBERRY_CC_FLAGS  " -V4.6.3,gcc_ntox86 -D__QNX__" )
+ set( BLACKBERRY_CXX_FLAGS " -V4.6.3,gcc_ntox86 -Y_gpp -D__QNX__" )
+endif()
 set( BLACKBERRY 1 )
 
 # NDK flags
@@ -100,10 +110,15 @@ set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fexceptions" )
 set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fexceptions" )
 
 # Release and Debug flags
-set( CMAKE_CXX_FLAGS_RELEASE "-mthumb -O3" )
-set( CMAKE_C_FLAGS_RELEASE   "-mthumb -O3" )
-set( CMAKE_CXX_FLAGS_DEBUG   "-marm -Os -finline-limit=64" )
-set( CMAKE_C_FLAGS_DEBUG     "-marm -Os -finline-limit=64" )
+if( BLACKBERRY_ARCHITECTURE STREQUAL "arm" )
+ set( CMAKE_CXX_FLAGS_RELEASE "-mthumb -O3" )
+ set( CMAKE_C_FLAGS_RELEASE   "-mthumb -O3" )
+ set( CMAKE_CXX_FLAGS_DEBUG   "-marm -Os -finline-limit=64" )
+ set( CMAKE_C_FLAGS_DEBUG     "-marm -Os -finline-limit=64" )
+else()
+ set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=i486" )
+ set( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -march=i486" )
+endif()
 
 # Cache flags
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}" CACHE STRING "c++ flags" )
