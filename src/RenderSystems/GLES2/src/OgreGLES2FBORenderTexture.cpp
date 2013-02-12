@@ -58,7 +58,6 @@ namespace Ogre {
 
 	void GLES2FBORenderTexture::swapBuffers(bool waitForVSync)
 	{
-		LogManager::getSingleton().logMessage("\tGLES2FBORenderTexture::swapBuffers called");
 		mFB.swapBuffers();
 	}
 	//-----------------------------------------------------------------------------
