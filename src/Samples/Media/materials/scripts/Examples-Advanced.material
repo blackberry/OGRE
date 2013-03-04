@@ -588,6 +588,7 @@ material Examples/FresnelReflectionRefraction
 				// Will be filled in at runtime
 				texture reflection
 				tex_address_mode clamp
+				filtering linear linear none
 			}
 			// Refraction
 			texture_unit
@@ -595,6 +596,7 @@ material Examples/FresnelReflectionRefraction
 				// Will be filled in at runtime
 				texture refraction
 				tex_address_mode clamp
+				filtering linear linear none
 			}
 		}
 		

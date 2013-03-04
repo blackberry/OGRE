@@ -249,5 +249,11 @@ Go back to the command line console to generate a bar file and deploy it to the 
 Note: If you need to modify the source code and build the sample app, the "bin/resources.cfg" may be overwritten. 
 Pleaase double check it and restore it with the one under "../CMake/toolchain/resources.cfg" before you create the "out.bar"
 
-
+Note: Mipmaps are not supported when rendering to a texture. If you are rendering to a texture you will need to disable mipmapping in your texture filter because Ogre uses trilinear filtering by default:
+texture_unit
+{
+    texture myRenderTexture
+    filtering linear linear none
+}
+Credit and more details: http://www.ogre3d.org/forums/viewtopic.php?f=2&t=71354
 
